@@ -230,6 +230,128 @@ h1, h2, h3, h4, h5, h6 {
             font-weight: 700;
         }
 
+    /*	   S e c t i o n     */
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section__header {
+            width: 100%;
+            max-width: 950px;
+            margin: 0 auto 40px;
+
+            text-align: center;
+        }
+
+        .section__suptitle {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .section__title {
+            font-size: 30px;
+            font-weight: 700;
+            color: #333;
+
+            text-transform: uppercase;
+        }
+        .section__title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #f38181;
+
+            margin: 30px auto;
+        }
+
+        .section__text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            color: #999;
+        }
+
+    /*	   A b o u t     */
+
+        .about {
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: 80px;
+        }
+
+        .about__item {
+            width: 380px;
+            position: relative;
+
+            background-color: #95e1d3;
+        }
+
+        .about__item:hover .about__img {
+            transform: translate3d(-10px, -10px, 0);
+        }
+
+        .about__item:hover .about__img img{
+            opacity: 0.1;
+        }
+
+        .about__item:hover .about__text {
+            opacity: 1;
+        }
+
+        .about__img {
+            background: linear-gradient(to bottom, #f38181, #fce38a);
+
+            transition: transform .1s linear;
+        }
+        .about__img img {
+            display: block;
+            transition: opacity .1s linear;
+        }
+
+        .about__text {
+            width: 100%;
+
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+
+            text-align: center;
+
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 2;
+            transform: translate3d(0, -50%, 0);
+
+            opacity: 0;
+            transition: opacity .2s linear;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
