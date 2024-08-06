@@ -240,6 +240,7 @@ hr {
             padding: 80px 0;
         }
         .section--devices {
+            margin-bottom: 40px;
             padding-bottom: 0;
 
             background: url(../images/devices/devices_bg.jpg) center no-repeat;
@@ -431,16 +432,88 @@ hr {
             z-index: 1;
         }
 
+    /*	   W e    D o     */
 
+        .wedo {
+            display: flex;
+        }
 
+        .wedo__item {
+            width: 50%;
+        }
+        
+    /*	   A c c o r d i o n     */
 
+        .accordion {}
 
+        .accordion__item {
+            margin-top: 10px;
+            border: 1px solid #e5e5e5;
+        }
+        .accordion__item.active .accordion__content {
+            display: block;
+        }
+        .accordion__item.active .accordion__header::after {
+            transform: rotate(-45deg);
+        }
+        .accordion__item.active .accordion__header {
+            border-bottom-color: #e5e5e5;
+        }
 
+        .accordion__header {
+            padding: 15px 20px 15px 65px;
+            border-bottom: 1px solid transparent;
 
+            position: relative;
+            cursor: pointer;
+        }
+        .accordion__header::after {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 16px;
 
+            border-top: 2px solid #ccc;
+            border-right: 2px solid #ccc;
+            
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            z-index: 1;
 
+            transform: translateY(-50%) rotate(135deg);
+        }
 
+        .accordion__icon {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            z-index: 1;
 
+            transform: translateY(-50%);
+        }
+
+        .accordion__title {
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .accordion__content {
+            padding: 15px 20px;
+            display: none;
+
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 15px;
+            color: #999;
+        }
+        
+        
+        
+        
 
 
 
