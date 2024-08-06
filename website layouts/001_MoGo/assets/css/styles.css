@@ -13,13 +13,9 @@ body {
     color: #333;
 }
 
-*, ::before, ::after {
-    box-sizing: border-box;
-}
+*, ::before, ::after {box-sizing: border-box;}
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-}
+h1, h2, h3, h4, h5, h6 {margin: 0;}
 
 hr {
     margin: 40px 0;
@@ -243,6 +239,13 @@ hr {
         .section {
             padding: 80px 0;
         }
+        .section--devices {
+            padding-bottom: 0;
+
+            background: url(../images/devices/devices_bg.jpg) center no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
 
         .section__header {
             width: 100%;
@@ -408,8 +411,25 @@ hr {
             color: #999;
         }
 
+    /*	   D e v i c e s     */
 
+        .devices {
+            width: 100%;
+            max-width: 600px;
 
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .devices__item {
+            display: block;
+        }
+        .devices__item--iphone {
+            position: absolute;
+            bottom: -80px;
+            right: 0;
+            z-index: 1;
+        }
 
 
 
