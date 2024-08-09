@@ -572,7 +572,7 @@ hr {
         }
         
         .reviews__item {
-            padding-left: 205px;
+            padding-left: 225px;
             position: relative;
         }
 
@@ -588,6 +588,7 @@ hr {
         }
 
         .reviews__text {
+            font-family: 'Roboto', sans-serif;
             font-size: 24px;
             font-weight: 300;
             font-style: italic;
@@ -647,19 +648,74 @@ hr {
         .logos {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
-
         .logos__item {}
 
+    /*	   W o r k s     */
+
+        .works {display: flex;}
+
+        .works__col {flex: 1 1 0;}
+
+        .works__item {
+            position: relative;
+            background: linear-gradient(to bottom, #f38181, #fce38a);
+        }
+        .works__item:hover .works__image {opacity: .1;}
+        .works__item:hover .works__info {opacity: 1;}
+
+        .works__image {
+            display: block;
+            max-width: 100%;
+            transition: opacity .2s linear;
+        }
+
+        .works__info {
+            width: 100%;
+            padding: 0 15px;
+
+            opacity: 0;
+            transition: opacity .2s linear;
+
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 1;
+            
+            transform: translate3d(0, -50%, 0);
+            
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+        }
+        .works__title {
+            margin-bottom: 5px;
+
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .works__text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+
+    /*	   Rs     */
 
 
 
 
 
-    /*	   R e v i e w s     */
 
 
 
+
+
+    /*	   Rs     */
 
 
 
