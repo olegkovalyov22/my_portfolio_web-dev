@@ -32,7 +32,13 @@ hr {
 
 /*     | S T Y L E |>     */
 
-	/*	   C o n t a i n e r     */
+    /*     P a g e     */
+
+        .page {
+            overflow: hidden;
+        }
+
+	/*     C o n t a i n e r     */
 
         .container {
             width: 100%;
@@ -41,7 +47,7 @@ hr {
             padding: 0 15px;
         }
 
-    /*	   I n t r o     */
+    /*     I n t r o     */
 
         .intro {
             display: flex;
@@ -50,10 +56,13 @@ hr {
 
             width: 100%;
             height: 100vh;
+            min-height: 820px;
 
             background: url("../images/intro.jpg") center no-repeat;
             -webkit-background-size: cover;
             background-size: cover;
+
+            position: relative;
         }
 
         .intro__inner {
@@ -90,7 +99,7 @@ hr {
             color: #fff;
         }
 
-    /*	   H e a d e r     */
+    /*     H e a d e r     */
 
         .header {
             padding-top: 30px;
@@ -103,11 +112,26 @@ hr {
             right: 0;
             z-index: 1000;
         }
+        .header.fixed {
+            background-color: #e88182; /*ea8283*/
+            box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+
+            transform: translate3d(0, 0, 0);
+        }
+        .header.active {
+            background-color: #e88182;
+        }
 
         .header__inner {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            /* position: relative; */ /* - - - for MY MODE - - -*/
         }
 
         .header__logo {
@@ -116,7 +140,7 @@ hr {
             color: #fff;
         }
 
-    /*	   N a v     */
+    /*     N a v     */
 
         .nav {
             font-size: 14px;
@@ -161,7 +185,77 @@ hr {
             color: #fce38a;
         }
 
-    /*	   B t n     */
+    /*     N a v - t o g g l e     */
+
+        .nav-toggle {
+            padding: 10px 0;
+
+            display: none;
+
+            position: absolute;
+            top: 24px;  /* 14px for  MY MODE */
+            right: 24px;  /* 14px for  MY MODE */
+            z-index: 1;
+
+            width: 30px;
+            
+            font-size: 0;
+            color: transparent;
+            border: 0;
+            background: none;
+            cursor: pointer;
+        }
+        .nav-toggle__item {
+            display: block;
+            width: 100%;
+            height: 3px;
+
+            background-color: #fff;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            margin: auto;
+
+            transition: background-color .2s linear;
+        }
+        .nav-toggle__item::before, .nav-toggle__item::after {
+            content: '';
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+
+            position: absolute;
+            left: 0;
+            z-index: 1;
+
+            transition: transform .2s linear;
+        }
+        .nav-toggle__item::before {
+            top: -8px;
+        }
+        .nav-toggle__item::after {
+            top: 8px;
+        }
+
+
+
+        .nav-toggle.active .nav-toggle__item {
+            background: none;
+        }
+        .nav-toggle.active .nav-toggle__item::before {
+            transform-origin: left bottom;
+            transform: rotate(45deg) translate3d(0, -4px, 0);
+        }
+        .nav-toggle.active .nav-toggle__item::after {
+            transform-origin: left top;
+            transform: rotate(-45deg) translate3d(0, 4px, 0);
+        }
+
+    /*     B t n     */
         
         .btn {
             display: inline-block;
@@ -183,7 +277,7 @@ hr {
             color: #333;
         }
 
-    /*	   S l i d e r     */
+    /*     S l i d e r     */
 
         .slider {
             width: 100%;
@@ -236,11 +330,11 @@ hr {
             font-weight: 700;
         }
 
-    /*	   S e c t i o n     */
+    /*     S e c t i o n     */
 
         .section {
             padding: 80px 0;
-            position: relative;
+            /*position: relative;*/    /* - - - MY MODE - - - */
         }
         .section--devices {
             margin-bottom: 40px;
@@ -261,7 +355,7 @@ hr {
         /* .section--clients {
             background: linear-gradient(to bottom, #8581f3, #8ab4fc);
             z-index: 0;
-        }
+        }   
         .section--clients::before {
             content: "";
             background: url(../images/clients/clients_bg.jpg);
@@ -271,7 +365,7 @@ hr {
             top: 0; left: 0; right: 0; bottom: 0;
             width: 100%;
             height: 100%;
-        } */
+        } */        /* - - - MY MODE - - - */
         .section--map {
             padding: 40px 0;
 
@@ -317,7 +411,7 @@ hr {
             color: #999;
         }
 
-    /*	   C a r d (About&Team)     */
+    /*     C a r d (About&Team)     */
 
         .card {
             display: flex;
@@ -394,7 +488,7 @@ hr {
             color: #999;
         }
 
-    /*	   S o c i a l (Team)     */
+    /*     S o c i a l (Team)     */
 
         .social {
             display: flex;
@@ -426,7 +520,7 @@ hr {
             background-color: #f38181;
         }
 
-    /*	   S t a t i s t i c s     */
+    /*     S t a t i s t i c s     */
 
         .statistics {
             background-color: #95e1d3;
@@ -462,7 +556,7 @@ hr {
             text-transform: uppercase;
         }
 
-    /*	   S e r v i c e s     */
+    /*     S e r v i c e s     */
 
         .services {
             display: flex;
@@ -505,7 +599,7 @@ hr {
             color: #999;
         }
 
-    /*	   D e v i c e s     */
+    /*     D e v i c e s     */
 
         .devices {
             width: 100%;
@@ -527,7 +621,7 @@ hr {
             z-index: 1;
         }
 
-    /*	   W e    D o     */
+    /*     W e    D o     */
 
         .wedo {
             display: flex;
@@ -545,7 +639,7 @@ hr {
             height: auto;
         }
 
-    /*	   A c c o r d i o n     */
+    /*     A c c o r d i o n     */
 
         .accordion {}
 
@@ -614,7 +708,7 @@ hr {
             color: #999;
         }
 
-    /*	   R e v i e w s     */
+    /*     R e v i e w s     */
 
         .reviews {
             padding: 0 110px;
@@ -627,14 +721,18 @@ hr {
         }
 
         .reviews__photo {
+            display: block;
             position: absolute;
             top: 0;
             left: 0;
             z-index: 1;
 
+            width: 210px;
+            height: 210px;
+
             border: 5px solid #95e1d3;
-            /* border-radius: 50%;
-            filter: drop-shadow(0px 0px 2px); */
+            border-radius: 50%;
+            /* filter: drop-shadow(0px 0px 2px); */
         }
 
         .reviews__text {
@@ -693,16 +791,24 @@ hr {
             transform: rotate(135deg);
         }
 
-    /*	   L o g o s     */
+    /*     L o g o s     */
 
         .logos {
+            margin: 0 -15px;
+            
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .logos__item {}
+        .logos__item {padding: 0 15px;}
+        
+        .logos__img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
 
-    /*	   W o r k s     */
+    /*     W o r k s     */
 
         .works {display: flex;}
 
@@ -717,7 +823,8 @@ hr {
 
         .works__image {
             display: block;
-            max-width: 100%;
+            width: 100%;
+            height: auto;
             transition: opacity .2s linear;
         }
 
@@ -753,7 +860,7 @@ hr {
             font-style: italic;
         }
 
-    /*	   C l i e n t s     */
+    /*     C l i e n t s     */
 
         .clients {
             margin-top: 70px;
@@ -761,7 +868,7 @@ hr {
             display: flex;
             flex-wrap: wrap;
         }
-        
+
         .clients__item {
             margin-bottom: 60px;
 
@@ -783,7 +890,7 @@ hr {
             left: 40px;
             z-index: 1;
         }
-        
+
         .clients__content {
         }
         .clients__name {
@@ -816,11 +923,12 @@ hr {
             background-color: #f38181;
         }
 
-    /*	   B l o g     */
+    /*     B l o g     */
 
         .blog {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         .blog__item {
@@ -914,7 +1022,7 @@ hr {
             color: #95e1d3;
         }
 
-    /*	   M a p     */
+    /*     M a p     */
 
         .map {
             text-align: center;
@@ -942,7 +1050,7 @@ hr {
             margin: 15px auto 0;
         }
 
-    /*	   F o o t e r     */
+    /*     F o o t e r     */
 
         .footer {
             padding-top: 65px;
@@ -951,13 +1059,15 @@ hr {
         }
 
         .footer__inner {
+            margin: 0 -15px;  /* убрать? */
             padding-bottom: 65px;
 
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
         }
 
-        .footer__col {}
+        .footer__col {padding: 0 15px;}  /* убрать? */
         .footer__col--first {width: 40%;}
         .footer__col--second {width: 29%;}
         .footer__col--third {width: 22%;}
@@ -1023,7 +1133,7 @@ hr {
             text-transform: uppercase;
         }
 
-    /*	   S u b s c r i b e     */
+    /*     S u b s c r i b e     */
 
         .subscribe {
             display: flex;
@@ -1082,7 +1192,7 @@ hr {
         .subscribe__btn:hover {background-color: #60ceba;}
         .subscribe__btn:focus {outline: 0;}
 
-    /*	   B l o g s     */
+    /*     B l o g s     */
 
         .blogs {}
 
@@ -1126,26 +1236,33 @@ hr {
             font-style: italic;
         }
 
-    /*	   I n s t a g r a m     */
+    /*     I n s t a g r a m     */
 
         .instagram {
             display: flex;
             flex-wrap: wrap;
+            /* width: 100%;
+            height: auto; */
         }
 
         .instagram__item {
-            flex: 1 1 0;
-
-            width: 88px;  /* 33.33333% */
-            height: 88px;
+            /* flex: 1 1 0; */
+            /* max-width: 100%; */
+            width: 33.33333%;  /* 33.33333% */
+            /* height: 88px; */
 
             border: 1px solid #fff;
-        }
-        .instagram__item img {
             display: block;
         }
+        .instagram__item img {
+            /* margin: 0 auto; */
+            display: block;
+            /* - - - MY MODE - - - */ /* Найдена ошибка - Надо убрать max- */
+            max-width: 100%;
+            height: auto;/*  */
+        }
 
-    /*	   C o p y r i g h t     */
+    /*     C o p y r i g h t     */
 
         .copyright {
             padding: 20px 0;
@@ -1209,6 +1326,13 @@ hr {
         /*   we  do  */  
         /*   accordion  */
         /*   reviews  */
+            
+            .reviews__text {font-size: 20px;}
+            .reviews__photo {
+                width: 180px;
+                height: 180px;
+            }
+
         /*   logos  */
         /*   works  */
         /*   clients  */
@@ -1272,15 +1396,67 @@ hr {
         /*   we  do  */  
         /*   accordion  */
         /*   reviews  */
+            
+            .reviews {
+                padding: 0 60px;
+            }
+            .reviews__item {padding-left: 175px;}
+            .reviews__photo {
+                width: 150px;
+                height: 150px;
+            }
+
         /*   logos  */
         /*   works  */
+
         /*   clients  */
+            .clients {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .clients__item {
+                padding-right: 0;
+                width: 100%;
+            }
+            .clients__item:last-child {
+                margin-bottom: 0;
+            }
+
         /*   blog  */
         /*   map  */
+
         /*   footer  */
+            /* .footer__col--first {width: 100%;}
+            .footer__col--second {
+                width: 65%;
+                padding-right: 15px;
+            }
+            .footer__col--third {
+                width: 35%;
+                padding-left: 15px;
+            } */  /* - - - MY MODE - - - */
+
+            .footer__col--first {width: 100%;}
+            .footer__col--second, .footer__col--third {width: 50%;}
+
+
+ 
+
+
+
         /*   subscribe  */
         /*   blogs  */
+
         /*   instagram  */
+
+            .instagram {
+                justify-content: flex-start;
+            }
+            .instagram__item {
+                width: auto;
+                border-right: 1px solid #fff;
+            }
+
         /*   copyright  */
     }
 
@@ -1288,14 +1464,36 @@ hr {
     @media (max-width: 770px) {
         
         /*   header  */
+            .header {
+                padding: 10px 0;
+            }
 
         /*   nav   */
         
             .nav {
                 display: none;
+
+                position: absolute;
+                top: 100%;
+                left: 0;
+
+                width: 100%;
+                background-color: #db7172;  /* #e88182 */
             }
+            .nav__link {
+                display: block;
+                margin: 0;
+                padding: 10px 20px;
+            }
+
+        /*   nav-toggle   */
+            .nav-toggle {display: block;}
+            
         
         /*   intro   */
+            .intro {
+                min-height: 650px;
+            }
 
         /*   slider   */
 
@@ -1371,13 +1569,61 @@ hr {
             }
 
         /*   accordion  */
+
         /*   reviews  */
+
+            .reviews__item {padding-left: 0;}
+            .reviews__photo {
+                margin: 0 auto 20px;
+                position: static;
+            }
+            .reviews__text {font-size: 16px;}
+            .reviews__author {font-size: 20px;}
+
         /*   logos  */
+
+            .logos {
+                flex-wrap: wrap;
+            }
+            .logos__item {
+                width: 33%;
+            }
+            .logos__img {
+                margin: 0 auto 20px;
+            }
+
         /*   works  */
+            .works {
+                flex-wrap: wrap;
+            }
+            .works__col {
+                flex: none;
+                width: 50%;
+            }
+
         /*   clients  */
+
         /*   blog  */
+            .blog {
+                max-width: 380px;
+                margin: 0 auto;
+                /* text-align: center; */
+            }
+            .blog__item {
+                margin-bottom: 30px;
+                width: 100%;
+            }
+            .blog__item:last-child {
+                margin-bottom: 0;
+            }
+
         /*   map  */
+
         /*   footer  */
+
+            /* убрать в MY MODE */
+            .footer__col--second, .footer__col--third {width: 100%;}
+
         /*   subscribe  */
         /*   blogs  */
         /*   instagram  */
@@ -1449,16 +1695,78 @@ hr {
 
         /*   we  do  */  
         /*   accordion  */
+
         /*   reviews  */
+
+            .reviews {padding: 0;}
+            .reviews__btn {top: 24%;}
+
         /*   logos  */
+
+            
+            .logos__item {
+                width: 50%;
+            }
+
         /*   works  */
+
+            
+            .works__col {
+                width: 100%;
+            }
+
         /*   clients  */
+            .clients__item {
+                padding-left: 0;
+                text-align: center;
+            }
+            .clients__photo {
+                position: static;
+            }
+            .clients__text::before {
+                margin: 15px auto;
+            }
+
         /*   blog  */
         /*   map  */
+
         /*   footer  */
+        
+            /* .footer__col--second {
+                width: 100%;
+                padding-right: 0;
+            }
+            .footer__col--third {
+                width: 100%;
+                padding-left: 0;
+            }
+            .footer__title {
+                text-align: center;
+                font-size: 20px;
+            } */ /* - - - MY MODE - - - */
+
         /*   subscribe  */
+            .subscribe {
+                flex-wrap: wrap;
+                max-width: none;
+            }
+            .subscribe__input, .subscribe__btn {
+                width: 100%;
+            }
+            .subscribe__input {
+                margin-bottom: 10px;
+                border-right: 1px solid #e7e7e7;
+            }
         /*   blogs  */
+            .blogs__img {
+                width: 90px;
+                height: 60px;
+            }
+            .blogs__title {font-size: 10px;} /* убрать в MY MODE  */
         /*   instagram  */
+            /* .instagram {
+                padding: 0 30px;
+            } */ /* - - - MY MODE - - - */
         /*   copyright  */
     }
 
