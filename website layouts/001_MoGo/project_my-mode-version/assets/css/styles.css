@@ -1239,18 +1239,22 @@ hr {
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 
-/* Simple user - .simpUs____ Пользователь без подписки  */
-/* Subscribed user - .subsUs__ - Пользователь с подпиской  */
+/* Simple user - .simplUs____ Пользователь без подписки  */
+/* Subscribed user - .subsUs__ - Пользователь с подпиской --> пока что не пригодится, но
+                                                            НО, как вариант, для юзеров с подпиской,
+                                                            сделать свежую статью с иконкой короны,
+                                                            в верхнем левом углу картинки
+*/
 
 
 
-        .wz____blog__header {
+        .simplUs____blog__header {
             position: relative;
             margin-bottom: 12px;
             background-color: #000;
         }
         
-        .wz____blog__photo {
+        .simplUs____blog__photo {
             display: block;
 
             /* padding: 5px 0; */
@@ -1267,7 +1271,7 @@ hr {
             position: relative;
             transition: opacity .2s linear;
         }
-        .wz____blog__photo-text {
+        .simplUs____blog__photo-text {
             z-index: 1;
             position: absolute;
             top: 50%;
@@ -1282,7 +1286,7 @@ hr {
             font-weight: 500;
         }
 
-        .wz____blog__date::before {
+        .simplUs____blog__date::before {
             content: 'NEW NEW NEW NEW NEW NEW NEW NEW';
             overflow: hidden;
             display: block;
@@ -1303,7 +1307,7 @@ hr {
             transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
             /* transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; */
         }
-        .wz____blog__date::after {
+        .simplUs____blog__date::after {
             content: 'NEW NEW NEW NEW NEW NEW NEW NEW';
             overflow: hidden;
             display: block;
@@ -1325,28 +1329,28 @@ hr {
             transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
             /* transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; */
         }
-        .blog__item:hover .wz____blog__photo {
+        .blog__item:hover .simplUs____blog__photo {
             opacity: .2;
         }
-        .blog__item:hover .wz____blog__date::before {
+        .blog__item:hover .simplUs____blog__date::before {
             height: 40%;
             background: #d5fff7;
             color: #95fce9;
             padding: 3px 0px;
         }
-        .blog__item:hover .wz____blog__date::after {
+        .blog__item:hover .simplUs____blog__date::after {
             height: 40%;
             background: #70c1b2;
             color: #4da797;
             padding: 10px 0px;
         }
-        .blog__item:hover .wz____blog__date-day {
+        .blog__item:hover .simplUs____blog__date-day {
             top: 22%;
             color: #fff;
             border-bottom: 2px solid #56c6b1;
             /* text-shadow: 0px 2px 0px #56c6b1; */   /* ?-?-?-?-? */
         }
-        .blog__item:hover .wz____blog__date-month {
+        .blog__item:hover .simplUs____blog__date-month {
             bottom: 22%;
             /* color: #fff; */ /* ЛИБО ЛИБО место color: #fff; в .blog__item:hover .icon-open */
             border-top: 2px solid #56c6b1;
@@ -1380,7 +1384,7 @@ hr {
         }
 
 
-        .wz____blog__date-day {
+        .simplUs____blog__date-day {
             padding: 10px 5px;
             text-align: center;
             line-height: 1;
@@ -1406,7 +1410,7 @@ hr {
             z-index: 2;
             transition: top .2s linear, border .2s linear, color .2s linear;
         }
-        .wz____blog__date-month {
+        .simplUs____blog__date-month {
             padding: 10px 5px;
             text-align: center;
             line-height: 1;
@@ -2092,9 +2096,20 @@ hr {
 
 			color: #999;
 		} /* - - - MY MODE - - - */
-		.inst__l:hover {
-			text-decoration: underline;
-		} /* - - - MY MODE - - - */
+
+        
+        .inst__l:hover {
+            /* text-decoration: underline; */
+        } /* - - - MY MODE - - - */ /* - version 1 - */
+        /* ИЛИ */
+        .footer__col--third:hover .inst__l {
+            text-decoration: underline;
+		} /* - - - MY MODE - - - */ /* - version 2 - */
+        .inst__link:hover .inst__l {
+            text-decoration: none;
+            text-shadow: 1px 1px 1px #3f51b5; /* #000 */
+        } /* - - - MY MODE - - - */ /* - version 2 - */
+        
 
 
     /*     C o p y r i g h t     */
@@ -2376,42 +2391,42 @@ hr {
 
 
 
-            .wz____blog__photo-text {
+            .simplUs____blog__photo-text {
                 margin: 0px 68px; /* changed */
                 font-size: 12px; /* changed */
             }
 
-            .wz____blog__date::before {
+            .simplUs____blog__date::before {
                 font-size: 25px; /* changed */
                 padding: 10px 7px; /* changed */
 
                 /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
-            .wz____blog__date::after {
+            .simplUs____blog__date::after {
                 font-size: 25px; /* changed */
                 padding: 10px 7px; /* changed */
 
                 /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
      
-            .blog__item:hover .wz____blog__date::before {
+            .blog__item:hover .simplUs____blog__date::before {
                 height: 36%; /* changed */
                 padding: 0px 0px; /* changed */
                 line-height: 1.4; /* changed */
             }
-            .blog__item:hover .wz____blog__date::after {
+            .blog__item:hover .simplUs____blog__date::after {
                 height: 36%; /* changed */
                 padding: 0px 0px; /* changed */
                 line-height: 1.4; /* changed */
             }
-            .blog__item:hover .wz____blog__date-day {
+            .blog__item:hover .simplUs____blog__date-day {
                 top: 15%; /* changed */
             }
-            .blog__item:hover .wz____blog__date-month {
+            .blog__item:hover .simplUs____blog__date-month {
                 bottom: 15%; /* changed */
             }
 
-            .wz____blog__date {
+            .simplUs____blog__date {
                 /* padding: 10px 20px; */
                 
                 /* text-align: center; */
@@ -2426,7 +2441,7 @@ hr {
                 /* z-index: 2; */
                 /* line-height: 1; */
             }
-            .wz____blog__date-day {
+            .simplUs____blog__date-day {
                 /* padding: 10px 5px; no changed */
                 /* width: 90px; no changed */
                 /* font-size: 20px; no changed */
@@ -2434,7 +2449,7 @@ hr {
                 top: 30%; /* changed */
                 /* transition: top .2s linear, border .2s linear, color .2s linear; */
             }
-            .wz____blog__date-month {
+            .simplUs____blog__date-month {
                 /* padding: 10px 5px; no changed */
                 /* width: 90px; no changed */
                 /* font-size: 20px; no changed */
@@ -2563,41 +2578,41 @@ hr {
 
 
 
-            .wz____blog__photo-text {
+            .simplUs____blog__photo-text {
                 margin: 0px 64px; /* changed */
                 /* font-size: 12px; no changed */
             }
 
-            .wz____blog__date::before {
+            .simplUs____blog__date::before {
                 font-size: 22px; /* changed */
                 padding: 8px 0px; /* changed */
 
                 /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
-            .wz____blog__date::after {
+            .simplUs____blog__date::after {
                 font-size: 22px; /* changed */
                 padding: 8px 0px; /* changed */
 
                 /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
 
-            .blog__item:hover .wz____blog__date::before {
+            .blog__item:hover .simplUs____blog__date::before {
                 /* height: 36%; no changed */
                 /* padding: 0px 0px; no changed */
                 line-height: 1.5; /* changed */
             }
-            .blog__item:hover .wz____blog__date::after {
+            .blog__item:hover .simplUs____blog__date::after {
                 /* height: 36%; no changed */
                 /* padding: 0px 0px; no changed */
                 line-height: 1.5; /* changed */
             }
-            .blog__item:hover .wz____blog__date-day {
+            .blog__item:hover .simplUs____blog__date-day {
                 /* top: 15%; no changed */
             }
-            .blog__item:hover .wz____blog__date-month {
+            .blog__item:hover .simplUs____blog__date-month {
                 /* bottom: 15%; no changed */
             }
-            .wz____blog__date {
+            .simplUs____blog__date {
                 /* padding: 10px 20px; */
                 
                 /* text-align: center; */
@@ -2612,7 +2627,7 @@ hr {
                 /* z-index: 2; */
                 /* line-height: 1; */
             }
-            .wz____blog__date-day {
+            .simplUs____blog__date-day {
                 /* padding: 10px 5px; no changed */
                 /* width: 90px; no changed */
                 /* font-size: no 20px; changed */
@@ -2620,7 +2635,7 @@ hr {
                 
                 /* transition: top .2s linear, border .2s linear, color .2s linear; */
             }
-            .wz____blog__date-month {
+            .simplUs____blog__date-month {
                 /* padding: 10px 5px; no changed */
                 /* width: 90px; no changed */
                 /* font-size: 20px; no changed */
@@ -2718,49 +2733,49 @@ hr {
 
     @media (max-width: 950px) {
 
-        .wz____blog__photo-text {
+        .simplUs____blog__photo-text {
             margin: 0px 48px; /* changed */
             /* font-size: 12px; no changed */
         }
 
-        .wz____blog__date::before {
+        .simplUs____blog__date::before {
             /* font-size: 22px; no changed */
             /* padding: 8px 0px; no changed */
             /* transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
         }
-        .wz____blog__date::after {
+        .simplUs____blog__date::after {
             /* font-size: 22px; no changed */
             /* padding: 8px 0px; no changed */
             /* transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
         }
 
-        .blog__item:hover .wz____blog__date::before {
+        .blog__item:hover .simplUs____blog__date::before {
             /* height: 36%; no changed */
             padding: 0px 15px; /* changed */
             font-size: 18px; /* changed */
             line-height: 1.6; /* changed */
         }
-        .blog__item:hover .wz____blog__date::after {
+        .blog__item:hover .simplUs____blog__date::after {
             /* height: 36%; no changed */
             padding: 0px 15px; /* changed */
             font-size: 18px; /* changed */
             line-height: 1.6; /* changed */
         }
-        .blog__item:hover .wz____blog__date-day {
+        .blog__item:hover .simplUs____blog__date-day {
             top: 12%; /* changed */
         }
-        .blog__item:hover .wz____blog__date-month {
+        .blog__item:hover .simplUs____blog__date-month {
             bottom: 13%; /* changed */
         }
 
-        .wz____blog__date-day {
+        .simplUs____blog__date-day {
             padding: 10px 5px 10px; /* changed */
             /* width: 90px; no changed */
             font-size: 19px; /* changed */
             top: 29%; /* changed */
             /* transition: top .2s linear, border .2s linear, color .2s linear; */
         }
-        .wz____blog__date-month {
+        .simplUs____blog__date-month {
             padding: 8px 5px 10px; /* changed */
             /* width: 90px; no changed */
             font-size: 18px; /* changed */
@@ -2774,42 +2789,42 @@ hr {
 
     @media (max-width: 850px) {
 
-        .wz____blog__photo-text {
+        .simplUs____blog__photo-text {
             margin: 0px 35px; /* changed */
             /* font-size: 12px; no changed */
         }
 
-        .wz____blog__date::before {
+        .simplUs____blog__date::before {
             font-size: 19px; /* changed */
             /* padding: 8px 0px; no changed */
 
             /* transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
         }
-        .wz____blog__date::after {
+        .simplUs____blog__date::after {
             font-size: 19px; /* changed */
             /* padding: 8px 0px; no changed */
 
             /* transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
         }
         
-        .blog__item:hover .wz____blog__date::before {
+        .blog__item:hover .simplUs____blog__date::before {
             /* height: 36%; no changed */
             padding: 0px 10px; /* changed */
             line-height: 1.45; /* changed */
         }
-        .blog__item:hover .wz____blog__date::after {
+        .blog__item:hover .simplUs____blog__date::after {
             /* height: 36%; no changed */
             padding: 0px 10px; /* changed */
             line-height: 1.45; /* changed */
         }
-        .blog__item:hover .wz____blog__date-day {
+        .blog__item:hover .simplUs____blog__date-day {
             top: 9%; /* changed */
         }
-        .blog__item:hover .wz____blog__date-month {
+        .blog__item:hover .simplUs____blog__date-month {
             bottom: 10%; /* changed */
         }
 
-        .wz____blog__date-day {
+        .simplUs____blog__date-day {
             /* padding: 10px 5px 10px; no changed */
             /* width: 90px; no changed */
             /* font-size: 19px; no changed */
@@ -2817,7 +2832,7 @@ hr {
 
             /* transition: top .2s linear, border .2s linear, color .2s linear; */
         }
-        .wz____blog__date-month {
+        .simplUs____blog__date-month {
             /* padding: 8px 5px 10px; no changed */
             /* width: 90px; no changed */
             /* font-size: 18px; no changed */
@@ -2999,44 +3014,44 @@ hr {
 
 
 
-            .wz____blog__photo-text {
+            .simplUs____blog__photo-text {
                 margin: 0px 13px; /* changed */
                 font-size: 13px; /* changed */
             }
 
-            .wz____blog__date::before {
+            .simplUs____blog__date::before {
                 font-size: 31px; /* changed */
                 padding: 15px 0px; /* changed, but ..???.. */
 
                 /* transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
-            .wz____blog__date::after {
+            .simplUs____blog__date::after {
                 font-size: 31px; /* changed */
                 padding: 15px 0px; /* changed, but ..???.. */
 
                 /* transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
 
-            .blog__item:hover .wz____blog__date::before {
+            .blog__item:hover .simplUs____blog__date::before {
                 height: 40%; /* changed */
                 padding: 3px 0px; /* changed */
                 font-size: 31px; /* changed */
                 line-height: 1.5; /* changed */
             }
-            .blog__item:hover .wz____blog__date::after {
+            .blog__item:hover .simplUs____blog__date::after {
                 height: 40%; /* changed */
                 padding: 10px 0px; /* changed */
                 font-size: 31px; /* changed */
                 line-height: 1.5; /* changed */
             }
-            .blog__item:hover .wz____blog__date-day {
+            .blog__item:hover .simplUs____blog__date-day {
                 top: 22%; /* changed */
             }
-            .blog__item:hover .wz____blog__date-month {
+            .blog__item:hover .simplUs____blog__date-month {
                 bottom: 22%; /* changed */
             }
 
-            .wz____blog__date {
+            .simplUs____blog__date {
                 /* background-color: #a7f7e7; */
 
                 /* padding: 10px 20px; */
@@ -3053,7 +3068,7 @@ hr {
                 /* z-index: 2; */
                 /* line-height: 1; */
             }
-            .wz____blog__date-day {
+            .simplUs____blog__date-day {
                 padding: 10px 5px; /* changed */
                 width: 120px; /* changed */
                 font-size: 23px; /* changed */
@@ -3061,7 +3076,7 @@ hr {
                 
                 /* transition: top .2s linear, border .2s linear, color .2s linear; */
             }
-            .wz____blog__date-month {
+            .simplUs____blog__date-month {
                 padding: 10px 5px; /* changed */
                 width: 120px; /* changed */
                 font-size: 23px; /* changed */
@@ -3237,31 +3252,31 @@ hr {
 
 
 
-            .wz____blog__photo-text {
+            .simplUs____blog__photo-text {
                 margin: 0px 32px; /* changed */
                 font-size: 12px; /* changed */
             }
 
-            .wz____blog__date::before {
+            .simplUs____blog__date::before {
                 font-size: 27px; /* changed */
                 padding: 10px 0px; /* changed */
 
                 /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
-            .wz____blog__date::after {
+            .simplUs____blog__date::after {
                 font-size: 27px; /* changed */
                 padding: 10px 0px; /* changed */
 
                 /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
 
-            .blog__item:hover .wz____blog__date::before {
+            .blog__item:hover .simplUs____blog__date::before {
                 /* height: 40%; no changed */
                 padding: 8px 0px; /* changed */
                 font-size: 27px; /* changed */
                 line-height: 1.4; /* changed */
             }
-            .blog__item:hover .wz____blog__date::after {
+            .blog__item:hover .simplUs____blog__date::after {
                 /* height: 40%; no changed */
                 padding: 8px 0px; /* changed */
                 font-size: 27px; /* changed */
@@ -3363,35 +3378,35 @@ hr {
 
     @media (max-width: 410px) {
         
-        .wz____blog__photo-text {
+        .simplUs____blog__photo-text {
             margin: 0px 2px; /* changed */
         }
 
-        .wz____blog__date::before {
+        .simplUs____blog__date::before {
             padding: 8px 0px; /* changed */
 
             /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
         }
-        .wz____blog__date::after {
+        .simplUs____blog__date::after {
             padding: 8px 0px; /* changed */
 
             /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
         }
 
-        .blog__item:hover .wz____blog__date::before {
+        .blog__item:hover .simplUs____blog__date::before {
             padding: 4px 0px; /* changed */
         }
-        .blog__item:hover .wz____blog__date::after {
+        .blog__item:hover .simplUs____blog__date::after {
             padding: 4px 0px; /* changed */
         }
-        .blog__item:hover .wz____blog__date-day {
+        .blog__item:hover .simplUs____blog__date-day {
             top: 19%; /* changed */
         }
-        .blog__item:hover .wz____blog__date-month {
+        .blog__item:hover .simplUs____blog__date-month {
             bottom: 19%; /* changed */
         }
 
-        .wz____blog__date {
+        .simplUs____blog__date {
             /* background-color: #a7f7e7; */
 
             /* padding: 10px 20px; */
@@ -3408,7 +3423,7 @@ hr {
             /* z-index: 2; */
             /* line-height: 1; */
         }
-        .wz____blog__date-day {
+        .simplUs____blog__date-day {
             /* padding: 10px 5px; no changed */
             /* width: 120px; no changed */
             /* font-size: 23px; no changed */
@@ -3416,7 +3431,7 @@ hr {
             
             /* transition: top .2s linear, border .2s linear, color .2s linear; */
         }
-        .wz____blog__date-month {
+        .simplUs____blog__date-month {
             /* padding: 10px 5px; no changed */
             /* width: 120px; no changed */
             /* font-size: 23px; no changed */
@@ -3450,41 +3465,41 @@ hr {
 
         /*   blog  */
 
-            .wz____blog__photo-text {
+            .simplUs____blog__photo-text {
                 margin: 0px 55px; /* changed */
             }
 
-            .wz____blog__date::before {
+            .simplUs____blog__date::before {
                 padding: 5px 0px; /* changed */
                 font-size: 25px; /* changed */
 
                 /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
-            .wz____blog__date::after {
+            .simplUs____blog__date::after {
                 padding: 5px 0px; /* changed */
                 font-size: 25px; /* changed */
 
                 /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
 
-            .blog__item:hover .wz____blog__date::before {
+            .blog__item:hover .simplUs____blog__date::before {
                 padding: 1px 0px; /* changed */
                 font-size: 25px; /* changed */
                 height: 36%; /* changed */
             }
-            .blog__item:hover .wz____blog__date::after {
+            .blog__item:hover .simplUs____blog__date::after {
                 padding: 1px 0px; /* changed */
                 font-size: 25px; /* changed */
                 height: 36%; /* changed */
             }
-            .blog__item:hover .wz____blog__date-day {
+            .blog__item:hover .simplUs____blog__date-day {
                 top: 13%; /* changed */
             }
-            .blog__item:hover .wz____blog__date-month {
+            .blog__item:hover .simplUs____blog__date-month {
                 bottom: 13%; /* changed */
             }
 
-            .wz____blog__date {
+            .simplUs____blog__date {
                 /* background-color: #a7f7e7; */
 
                 /* padding: 10px 20px; */
@@ -3501,7 +3516,7 @@ hr {
                 /* z-index: 2; */
                 /* line-height: 1; */
             }
-            .wz____blog__date-day {
+            .simplUs____blog__date-day {
                 /* padding: 10px 5px; no changed */
                 width: 100px; /* changed */
                 /* font-size: 23px; no changed */
@@ -3509,7 +3524,7 @@ hr {
                 
                 /* transition: top .2s linear, border .2s linear, color .2s linear; */
             }
-            .wz____blog__date-month {
+            .simplUs____blog__date-month {
                 /* padding: 10px 5px; no changed */
                 width: 100px; /* changed */
                 /* font-size: 23px; no changed */
@@ -3542,42 +3557,42 @@ hr {
 
 
     @media (max-width: 300px) {
-        .wz____blog__photo-text {
+        .simplUs____blog__photo-text {
             margin: 0px 45px; /* changed */
             font-size: 11px; /* changed */
         }
 
-        .wz____blog__date::before {
+        .simplUs____blog__date::before {
             padding: 6px 0px; /* changed */
             font-size: 20px; /* changed */
 
             /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
         }
-        .wz____blog__date::after {
+        .simplUs____blog__date::after {
             padding: 6px 0px; /* changed */
             font-size: 20px; /* changed */
 
             /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
         }
 
-        .blog__item:hover .wz____blog__date::before {
+        .blog__item:hover .simplUs____blog__date::before {
             /* padding: 1px 0px; no changed */
             font-size: 20px; /* changed */
             /* height: 36%; no changed */
         }
-        .blog__item:hover .wz____blog__date::after {
+        .blog__item:hover .simplUs____blog__date::after {
             /* padding: 1px 0px; no changed */
             font-size: 20px; /* changed */
             /* height: 36%; no changed */
         }
-        .blog__item:hover .wz____blog__date-day {
+        .blog__item:hover .simplUs____blog__date-day {
             top: 9%; /* changed */
         }
-        .blog__item:hover .wz____blog__date-month {
+        .blog__item:hover .simplUs____blog__date-month {
             bottom: 9%; /* changed */
         }
 
-        .wz____blog__date {
+        .simplUs____blog__date {
             /* background-color: #a7f7e7; */
 
             /* padding: 10px 20px; */
@@ -3594,7 +3609,7 @@ hr {
             /* z-index: 2; */
             /* line-height: 1; */
         }
-        .wz____blog__date-day {
+        .simplUs____blog__date-day {
             /* padding: 10px 5px; no changed */
             /* width: 100px; no changed */
             /* font-size: 23px; no changed */
@@ -3602,7 +3617,7 @@ hr {
             
             /* transition: top .2s linear, border .2s linear, color .2s linear; */
         }
-        .wz____blog__date-month {
+        .simplUs____blog__date-month {
             /* padding: 10px 5px; no changed */
             /* width: 100px; no changed */
             /* font-size: 23px; no changed */
