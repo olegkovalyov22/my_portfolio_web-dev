@@ -1226,13 +1226,24 @@ hr {
             font-weight: 700;
             font-style: normal;
         }
+        .blog__item:hover .blog__date {
+            background-color: #23c5a8;
+        } /* - - - MY MODE - - - */
+        .blog__item:hover .blog__title {
+            text-decoration: underline;
+        } /* - - - MY MODE - - - */
 
 
 
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-        
+
+/* Simple user - .simpUs____ Пользователь без подписки  */
+/* Subscribed user - .subsUs__ - Пользователь с подпиской  */
+
+
+
         .wz____blog__header {
             position: relative;
             margin-bottom: 12px;
@@ -1255,7 +1266,6 @@ hr {
             z-index: 1;
             position: relative;
             transition: opacity .2s linear;
-
         }
         .wz____blog__photo-text {
             z-index: 1;
@@ -1290,7 +1300,8 @@ hr {
             position: absolute;
             top: 0; left: 0;
 
-            transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+            transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+            /* transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; */
         }
         .wz____blog__date::after {
             content: 'NEW NEW NEW NEW NEW NEW NEW NEW';
@@ -1311,7 +1322,8 @@ hr {
             position: absolute;
             right: 0; bottom: 0;
 
-            transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+            transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+            /* transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; */
         }
         .blog__item:hover .wz____blog__photo {
             opacity: .2;
@@ -1332,17 +1344,21 @@ hr {
             top: 22%;
             color: #fff;
             border-bottom: 2px solid #56c6b1;
-            text-shadow: 0px 2px 0px #56c6b1;   /* ?-?-?-?-? */
+            /* text-shadow: 0px 2px 0px #56c6b1; */   /* ?-?-?-?-? */
         }
         .blog__item:hover .wz____blog__date-month {
             bottom: 22%;
-            color: #fff;
+            /* color: #fff; */ /* ЛИБО ЛИБО место color: #fff; в .blog__item:hover .icon-open */
             border-top: 2px solid #56c6b1;
-            text-shadow: 0px 2px 0px #56c6b1;   /* ?-?-?-?-? */
+            /* text-shadow: 0px 2px 0px #56c6b1; */   /* ?-?-?-?-? */
         }
         .blog__item:hover .icon-lock {
             color: #56c6b1;
-            text-shadow: 0px 2px 0px #fff;   /* ?-?-?-?-? */
+            /* text-shadow: 0px 2px 0px #fff; */   /* ?-?-?-?-? */
+        }
+        .blog__item:hover .icon-open {
+            color: #fff; /* ЛИБО ЛИБО место color: #fff; в .blog__item:hover .wz____blog__date-month */
+            /* text-shadow: 0px 2px 0px #56c6b1; */   /* ?-?-?-?-? */
         }
 
         .wz____blog__date {
@@ -1363,6 +1379,7 @@ hr {
             /* line-height: 1; */
         }
 
+
         .wz____blog__date-day {
             padding: 10px 5px;
             text-align: center;
@@ -1378,7 +1395,7 @@ hr {
             /* background-color: inherit; */
             border: 2px solid #56c6b1;
             border-bottom: 0;
-            text-shadow: 0px 2px 0px #fff;   /* ?-?-?-?-? */
+            /* text-shadow: 0px 2px 0px #fff; */   /* ?-?-?-?-? */
 
             
             position: absolute;
@@ -1404,7 +1421,7 @@ hr {
             /* background-color: inherit; */
             border: 2px solid #56c6b1;
             border-top: 0;
-            text-shadow: 0px 2px 0px #fff;   /* ?-?-?-?-? */
+            /* text-shadow: 0px 2px 0px #fff; */   /* ?-?-?-?-? */
 
 
             position: absolute;
@@ -1417,7 +1434,7 @@ hr {
         }
         .icon-lock {
             color: #fff;
-            text-shadow: 0px 2px 0px #56c6b1;   /* ?-?-?-?-? */
+            /* text-shadow: 0px 2px 0px #56c6b1; */   /* ?-?-?-?-? */
         }
         /* .icon-arrow {
             color: #000;
@@ -1470,6 +1487,52 @@ hr {
             z-index: 2;
             transition: bottom .2s linear;
         } */
+
+/* 
+.wz____blog__date::before {
+    / *1230px* / transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *990px* /  transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *950px* /  transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *850px* /  transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *770px* /  transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *575px* /  transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *410px* /  transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *350px* /  transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *300px* /  transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+}
+.wz____blog__date::after {
+    / *1230px* / transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *990px* /  transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *950px* /  transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *850px* /  transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *770px* /  transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *575px* /  transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *410px* /  transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *350px* /  transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+    / *300px* /  transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
+}
+.wz____blog__date-day {
+    / *1230px* / transition: top .2s linear, border .2s linear, color .2s linear;
+    / *990px* /  transition: top .2s linear, border .2s linear, color .2s linear;
+    / *950px* /  transition: top .2s linear, border .2s linear, color .2s linear;
+    / *850px* /  transition: top .2s linear, border .2s linear, color .2s linear;
+    / *770px* /  transition: top .2s linear, border .2s linear, color .2s linear;
+    / *575px* /  transition: top .2s linear, border .2s linear, color .2s linear;
+    / *410px* /  transition: top .2s linear, border .2s linear, color .2s linear;
+    / *350px* /  transition: top .2s linear, border .2s linear, color .2s linear;
+    / *300px* /  transition: top .2s linear, border .2s linear, color .2s linear;
+}
+.wz____blog__date-month {
+    / *1230px* / transition: bottom .2s linear, border .2s linear, color .2s linear;
+    / *990px* /  transition: bottom .2s linear, border .2s linear, color .2s linear;
+    / *950px* /  transition: bottom .2s linear, border .2s linear, color .2s linear;
+    / *850px* /  transition: bottom .2s linear, border .2s linear, color .2s linear;
+    / *770px* /  transition: bottom .2s linear, border .2s linear, color .2s linear;
+    / *575px* /  transition: bottom .2s linear, border .2s linear, color .2s linear;
+    / *410px* /  transition: bottom .2s linear, border .2s linear, color .2s linear;
+    / *350px* /  transition: bottom .2s linear, border .2s linear, color .2s linear;
+    / *300px* /  transition: bottom .2s linear, border .2s linear, color .2s linear;
+}           */
 
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
@@ -2259,6 +2322,7 @@ hr {
 
 
 
+
 /*     | M E D I A |>     */
     
     /* Desktop / Широкоугольные мониторы */
@@ -2271,7 +2335,6 @@ hr {
         /*   nav  */
 
         /*   intro   */
-
             .intro__title {
                 font-size: 120px;
             }
@@ -2289,8 +2352,8 @@ hr {
         /*   devices  */
         /*   we  do  */  
         /*   accordion  */
+
         /*   reviews  */
-            
             .reviews__text {font-size: 20px;}
             /* .reviews__photo {
                 width: 180px;
@@ -2302,6 +2365,7 @@ hr {
         /*   clients  */
 
         /*   blog  */
+
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
@@ -2313,28 +2377,23 @@ hr {
 
 
             .wz____blog__photo-text {
-                margin: 0px 70px; /* changed */
+                margin: 0px 68px; /* changed */
                 font-size: 12px; /* changed */
             }
 
             .wz____blog__date::before {
                 font-size: 25px; /* changed */
-                padding: 12px 7px; /* changed */
+                padding: 10px 7px; /* changed */
 
-                transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; /* changed */
+                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
             .wz____blog__date::after {
                 font-size: 25px; /* changed */
-                padding: 12px 7px; /* changed */
+                padding: 10px 7px; /* changed */
 
-                transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; /* changed */
+                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
      
-            
-            
-
-
-
             .blog__item:hover .wz____blog__date::before {
                 height: 36%; /* changed */
                 padding: 0px 0px; /* changed */
@@ -2367,30 +2426,24 @@ hr {
                 /* z-index: 2; */
                 /* line-height: 1; */
             }
-
-
-
-
             .wz____blog__date-day {
-                /* padding: 10px 5px; */
-                /* width: 90px; */
-                /* font-size: 20px; */
+                /* padding: 10px 5px; no changed */
+                /* width: 90px; no changed */
+                /* font-size: 20px; no changed */
                 
                 top: 30%; /* changed */
-                transition: top .2s linear, border .2s linear, color .2s linear;
+                /* transition: top .2s linear, border .2s linear, color .2s linear; */
             }
             .wz____blog__date-month {
-                /* padding: 10px 5px; */
-                /* width: 90px; */
-                /* font-size: 20px; */
+                /* padding: 10px 5px; no changed */
+                /* width: 90px; no changed */
+                /* font-size: 20px; no changed */
 
                 bottom: 30%; /* changed */
-                transition: bottom .2s linear, border .2s linear, color .2s linear;
+                /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
             }
 
-            
-            
-
+    
 
 
 
@@ -2398,7 +2451,6 @@ hr {
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-
 
         /*   map  */
         /*   footer  */
@@ -2426,7 +2478,6 @@ hr {
         /*   nav  */
 
         /*   intro   */
-
             .intro__title {
                 font-size: 80px;
             }
@@ -2437,11 +2488,10 @@ hr {
         /*   btn  */
         /*   slider  */
         /*   section  */
-        
         /*   card (About&Team)  */
         /*   social (Team)  */
-        /*   statistics  */
 
+        /*   statistics  */
             .stat {
                 justify-content: center;
             }
@@ -2458,7 +2508,6 @@ hr {
             }
 
         /*   services  */
-
             .services__item {
                 width: 50%;
             }
@@ -2469,8 +2518,8 @@ hr {
         /*   devices  */
         /*   we  do  */  
         /*   accordion  */
+
         /*   reviews  */
-            
             .reviews .slick-slider {
                 padding: 0 30px;
             }
@@ -2514,49 +2563,41 @@ hr {
 
 
 
-
-
             .wz____blog__photo-text {
-                margin: 0px 35px; /* changed */
-                font-size: 12px; /* changed */
+                margin: 0px 64px; /* changed */
+                /* font-size: 12px; no changed */
             }
 
             .wz____blog__date::before {
                 font-size: 22px; /* changed */
                 padding: 8px 0px; /* changed */
 
-                transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; /* changed */
+                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
             .wz____blog__date::after {
                 font-size: 22px; /* changed */
                 padding: 8px 0px; /* changed */
 
-                transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; /* changed */
+                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
-            
-            
-
-
 
             .blog__item:hover .wz____blog__date::before {
-                height: 36%; /* changed */
-                padding: 0px 0px; /* changed */
+                /* height: 36%; no changed */
+                /* padding: 0px 0px; no changed */
                 line-height: 1.5; /* changed */
             }
             .blog__item:hover .wz____blog__date::after {
-                height: 36%; /* changed */
-                padding: 0px 0px; /* changed */
+                /* height: 36%; no changed */
+                /* padding: 0px 0px; no changed */
                 line-height: 1.5; /* changed */
             }
             .blog__item:hover .wz____blog__date-day {
-                top: 15%; /* changed */
+                /* top: 15%; no changed */
             }
             .blog__item:hover .wz____blog__date-month {
-                bottom: 15%; /* changed */
+                /* bottom: 15%; no changed */
             }
-
             .wz____blog__date {
-
                 /* padding: 10px 20px; */
                 
                 /* text-align: center; */
@@ -2571,30 +2612,24 @@ hr {
                 /* z-index: 2; */
                 /* line-height: 1; */
             }
-
             .wz____blog__date-day {
-                padding: 10px 5px; /* changed */
-                width: 90px; /* changed */
-
-                font-size: 20px; /* changed */
+                /* padding: 10px 5px; no changed */
+                /* width: 90px; no changed */
+                /* font-size: no 20px; changed */
+                /* top: 30%; no changed */
                 
-                top: 30%; /* changed */
-                
-                transition: top .2s linear, border .2s linear, color .2s linear;
+                /* transition: top .2s linear, border .2s linear, color .2s linear; */
             }
             .wz____blog__date-month {
-                padding: 10px 5px; /* changed */
-                width: 90px; /* changed */
-
-                font-size: 20px; /* changed */
+                /* padding: 10px 5px; no changed */
+                /* width: 90px; no changed */
+                /* font-size: 20px; no changed */
+                /* bottom: 30%; no changed */
                 
-                bottom: 30%; /* changed */
-                
-                transition: bottom .2s linear, border .2s linear, color .2s linear;
+                /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
             }
 
-            
-            
+             
 
 
 
@@ -2603,9 +2638,6 @@ hr {
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-
-
-
 
         /*   map  */
 
@@ -2622,11 +2654,6 @@ hr {
 
             /* .footer__col--first {width: 100%;}
             .footer__col--second, .footer__col--third {width: 50%;} */
-
-
- 
-
-
 
         /*   subscribe  */
 
@@ -2664,7 +2691,6 @@ hr {
             } /* - - - MY MODE - - - */
 
         /*   instagram  */
-
             .instagram {
                 /* justify-content: flex-start; */
             } /* убрать в - - - MY MODE - - - */
@@ -2679,52 +2705,45 @@ hr {
         /*   copyright  */
     }
 
+
+
+
+
+
+
+
+
+
+
+
     @media (max-width: 950px) {
 
-
-        
-
-
-
-
-
-        
-
         .wz____blog__photo-text {
-            margin: 0px 35px; /* changed */
-            font-size: 12px; /* changed */
+            margin: 0px 48px; /* changed */
+            /* font-size: 12px; no changed */
         }
 
         .wz____blog__date::before {
-            font-size: 22px; /* changed */
-            padding: 8px 0px; /* changed */
-
-            transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; /* changed */
+            /* font-size: 22px; no changed */
+            /* padding: 8px 0px; no changed */
+            /* transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
         }
         .wz____blog__date::after {
-            font-size: 22px; /* changed */
-            padding: 8px 0px; /* changed */
-
-            transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; /* changed */
+            /* font-size: 22px; no changed */
+            /* padding: 8px 0px; no changed */
+            /* transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
         }
-        
-        
-
-
-
 
         .blog__item:hover .wz____blog__date::before {
-            height: 36%; /* changed */
+            /* height: 36%; no changed */
             padding: 0px 15px; /* changed */
             font-size: 18px; /* changed */
-            
             line-height: 1.6; /* changed */
         }
         .blog__item:hover .wz____blog__date::after {
-            height: 36%; /* changed */
+            /* height: 36%; no changed */
             padding: 0px 15px; /* changed */
             font-size: 18px; /* changed */
-            
             line-height: 1.6; /* changed */
         }
         .blog__item:hover .wz____blog__date-day {
@@ -2734,67 +2753,52 @@ hr {
             bottom: 13%; /* changed */
         }
 
-
         .wz____blog__date-day {
             padding: 10px 5px 10px; /* changed */
-            width: 90px; /* changed */
-
+            /* width: 90px; no changed */
             font-size: 19px; /* changed */
-            
             top: 29%; /* changed */
-            
-            transition: top .2s linear, border .2s linear, color .2s linear;
+            /* transition: top .2s linear, border .2s linear, color .2s linear; */
         }
         .wz____blog__date-month {
             padding: 8px 5px 10px; /* changed */
-            width: 90px; /* changed */
-
+            /* width: 90px; no changed */
             font-size: 18px; /* changed */
-
             bottom: 29%; /* changed */
-            
-            transition: bottom .2s linear, border .2s linear, color .2s linear;
+            /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
         }
     }
 
+ 
+
+
     @media (max-width: 850px) {
-
-
-        
-
-
-
 
         .wz____blog__photo-text {
             margin: 0px 35px; /* changed */
-            font-size: 12px; /* changed */
+            /* font-size: 12px; no changed */
         }
 
         .wz____blog__date::before {
             font-size: 19px; /* changed */
-            padding: 8px 0px; /* changed */
+            /* padding: 8px 0px; no changed */
 
-            transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; /* changed */
+            /* transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
         }
         .wz____blog__date::after {
             font-size: 19px; /* changed */
-            padding: 8px 0px; /* changed */
+            /* padding: 8px 0px; no changed */
 
-            transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; /* changed */
+            /* transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
         }
         
-        
-
-
-
-
         .blog__item:hover .wz____blog__date::before {
-            height: 36%; /* changed */
+            /* height: 36%; no changed */
             padding: 0px 10px; /* changed */
             line-height: 1.45; /* changed */
         }
         .blog__item:hover .wz____blog__date::after {
-            height: 36%; /* changed */
+            /* height: 36%; no changed */
             padding: 0px 10px; /* changed */
             line-height: 1.45; /* changed */
         }
@@ -2805,28 +2809,32 @@ hr {
             bottom: 10%; /* changed */
         }
 
-
         .wz____blog__date-day {
-            padding: 10px 5px 10px; /* changed */
-            width: 90px; /* changed */
-
-            font-size: 19px; /* changed */
-            
+            /* padding: 10px 5px 10px; no changed */
+            /* width: 90px; no changed */
+            /* font-size: 19px; no changed */
             top: 27%; /* changed */
 
-            transition: top .2s linear, border .2s linear, color .2s linear;
+            /* transition: top .2s linear, border .2s linear, color .2s linear; */
         }
         .wz____blog__date-month {
-            padding: 8px 5px 10px; /* changed */
-            width: 90px; /* changed */
-
-            font-size: 18px; /* changed */
-            
+            /* padding: 8px 5px 10px; no changed */
+            /* width: 90px; no changed */
+            /* font-size: 18px; no changed */
             bottom: 27%; /* changed */
             
-            transition: bottom .2s linear, border .2s linear, color .2s linear;
+            /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
         }
     }
+
+             
+
+
+
+
+
+
+
 
 
     /* Tablet Portrait / Планшет в портретном режиме */
@@ -2838,7 +2846,6 @@ hr {
             }
 
         /*   nav   */
-        
             .nav {
                 display: none;
 
@@ -2860,15 +2867,13 @@ hr {
 
         /*   nav-toggle   */
             .nav-toggle {display: block;}
-            
-        
+
         /*   intro   */
             .intro {
                 min-height: 650px;
             }
 
         /*   slider   */
-
             .slider__text {
                 display: none;
             }
@@ -2877,10 +2882,9 @@ hr {
                 width: 50%;
             }
 
-
         /*   btn  */
-        /*   section  */
 
+        /*   section  */
             .section {
                 padding: 40px 0;
             }
@@ -2889,7 +2893,6 @@ hr {
             }
 
         /*   card (About&Team)  */
-
             .card {
                 margin-top: 50px;
                 justify-content: center;
@@ -2904,9 +2907,7 @@ hr {
             }
 
         /*   social (Team)  */
-
         /*   statistics  */
-
             /* .stat__item {
                 width: 50%;
             }
@@ -2915,7 +2916,6 @@ hr {
             } */
 
         /*   services  */
-            
             .services {
                 justify-content: center;
             }
@@ -2932,7 +2932,6 @@ hr {
         /*   devices  */
 
         /*   we  do  */
-
             .wedo__item {
                 width: 100%;
             }
@@ -2953,7 +2952,6 @@ hr {
             .reviews__author {font-size: 20px;}
 
         /*   logos  */
-
             .logos {
                 flex-wrap: wrap;
             }
@@ -3008,39 +3006,34 @@ hr {
 
             .wz____blog__date::before {
                 font-size: 31px; /* changed */
-                padding: 15px 0px; /* ..???.. */
+                padding: 15px 0px; /* changed, but ..???.. */
 
-                transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; /* changed */
+                /* transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
             .wz____blog__date::after {
                 font-size: 31px; /* changed */
-                padding: 15px 0px; /* ..???.. */
+                padding: 15px 0px; /* changed, but ..???.. */
 
-                transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; /* changed */
+                /* transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
-            
-            
-
-
-
 
             .blog__item:hover .wz____blog__date::before {
-                height: 40%;
-                padding: 3px 0px;
+                height: 40%; /* changed */
+                padding: 3px 0px; /* changed */
                 font-size: 31px; /* changed */
                 line-height: 1.5; /* changed */
             }
             .blog__item:hover .wz____blog__date::after {
-                height: 40%;
-                padding: 10px 0px;
+                height: 40%; /* changed */
+                padding: 10px 0px; /* changed */
                 font-size: 31px; /* changed */
                 line-height: 1.5; /* changed */
             }
             .blog__item:hover .wz____blog__date-day {
-                top: 22%;
+                top: 22%; /* changed */
             }
             .blog__item:hover .wz____blog__date-month {
-                bottom: 22%;
+                bottom: 22%; /* changed */
             }
 
             .wz____blog__date {
@@ -3060,36 +3053,25 @@ hr {
                 /* z-index: 2; */
                 /* line-height: 1; */
             }
-
-
-
-
             .wz____blog__date-day {
-                padding: 10px 5px;
-                
+                padding: 10px 5px; /* changed */
                 width: 120px; /* changed */
-
-                font-size: 23px;
+                font-size: 23px; /* changed */
+                top: 33%; /* changed */
                 
-                top: 33%;
-                
-                transition: top .2s linear, border .2s linear, color .2s linear;
+                /* transition: top .2s linear, border .2s linear, color .2s linear; */
             }
             .wz____blog__date-month {
-                padding: 10px 5px;
-                
+                padding: 10px 5px; /* changed */
                 width: 120px; /* changed */
-
-
-                font-size: 23px;
-
-                bottom: 33%;
+                font-size: 23px; /* changed */
+                bottom: 33%; /* changed */
                 
-                transition: bottom .2s linear, border .2s linear, color .2s linear;
+                /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
             }
 
             
-            
+    
 
 
 
@@ -3099,17 +3081,16 @@ hr {
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-
 
         /*   map  */
 
         /*   footer  */
-
             /* убрать в MY MODE 
             .footer__col--second, .footer__col--third {width: 100%;}*/
             .footer__col--second {width: 55%;} /* - - - MY MODE - - - */
             .footer__col--third {width: 45%;} /* - - - MY MODE - - - */
-        /*   subscribe  */
+        
+            /*   subscribe  */
 
         /*   blogs  */
             .blogs__item::before {
@@ -3148,7 +3129,6 @@ hr {
             } /* - - - MY MODE - - - */
 
         /*   instagram  */
-
             .inst__letter {
                 font-size: 50px;
             } /* - - - MY MODE - - - */
@@ -3164,7 +3144,6 @@ hr {
         /*   nav  */
 
         /*   intro   */
-
             .intro__title {
                 font-size: 40px;
             }
@@ -3176,7 +3155,6 @@ hr {
         /*   slider  */
 
         /*   section  */
-
             .section__header {
                 margin-bottom: 50px;
             }
@@ -3194,7 +3172,6 @@ hr {
         /*   social (Team)  */
 
         /*   statistics  */
-
             .stat__item {
                 width: 100%;
                 border-bottom: 1px solid #b5eae0;
@@ -3209,7 +3186,6 @@ hr {
         /*   services  */
 
         /*   devices  */
-
             .devices {
                 max-width: 320px;
             }
@@ -3223,20 +3199,15 @@ hr {
         /*   accordion  */
 
         /*   reviews  */
-
             .reviews, .slick-slider {padding: 0px;}
             .reviews__btn, .slick-arrow {top: 18%;}
 
         /*   logos  */
-
-            
             .logos__item {
                 width: 50%;
             }
 
         /*   works  */
-
-            
             .works__col {
                 width: 100%;
             }
@@ -3255,8 +3226,6 @@ hr {
 
         /*   blog  */
 
-
-
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
@@ -3269,94 +3238,37 @@ hr {
 
 
             .wz____blog__photo-text {
-                margin: 0px 10px; /* changed */
+                margin: 0px 32px; /* changed */
                 font-size: 12px; /* changed */
             }
 
             .wz____blog__date::before {
                 font-size: 27px; /* changed */
-                padding: 6px 0px;
+                padding: 10px 0px; /* changed */
 
-                transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; /* changed */
+                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
             .wz____blog__date::after {
                 font-size: 27px; /* changed */
-                padding: 3px 0px;
+                padding: 10px 0px; /* changed */
 
-                transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; /* changed */
+                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
-            
-            
-
-
-
-
-
 
             .blog__item:hover .wz____blog__date::before {
-                /* height: 40%; */
-                padding: 8px 0px;
+                /* height: 40%; no changed */
+                padding: 8px 0px; /* changed */
                 font-size: 27px; /* changed */
                 line-height: 1.4; /* changed */
             }
             .blog__item:hover .wz____blog__date::after {
-                /* height: 40%; */
-                padding: 8px 0px;
+                /* height: 40%; no changed */
+                padding: 8px 0px; /* changed */
                 font-size: 27px; /* changed */
                 line-height: 1.4; /* changed */
             }
-            .blog__item:hover .wz____blog__date-day {
-                top: 19%;
-            }
-            .blog__item:hover .wz____blog__date-month {
-                bottom: 19%;
-            }
-
-            .wz____blog__date {
-                /* background-color: #a7f7e7; */
-
-                /* padding: 10px 20px; */
-                
-                /* text-align: center; */
-
-                /* color: #fff; */
-                /* max-width: 75px;
-                width: 100%; */
-                
-                /* position: absolute;
-                top: 45%; left: 50%;
-                transform: translate3d(-50%, -48%, 0); */
-                /* z-index: 2; */
-                /* line-height: 1; */
-            }
-
-
-
-
-            .wz____blog__date-day {
-                /* padding: 10px 5px; */
-                
-                width: 120px; /* changed */
-
-                /* font-size: 23px; */
-                
-                top: 32%;
-                
-                transition: top .2s linear, border .2s linear, color .2s linear;
-            }
-            .wz____blog__date-month {
-                /* padding: 10px 5px; */
-                
-                width: 120px; /* changed */
-
-                /* font-size: 23px; */
-
-                bottom: 32%;
-                
-                transition: bottom .2s linear, border .2s linear, color .2s linear;
-            }
-
             
+
             
 
 
@@ -3367,12 +3279,8 @@ hr {
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
 /* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-
-
-
 
         /*   map  */
-
         /*   footer  */
         
             .footer__col--second {
@@ -3452,6 +3360,74 @@ hr {
         /*   copyright  */
     }
 
+
+    @media (max-width: 410px) {
+        
+        .wz____blog__photo-text {
+            margin: 0px 2px; /* changed */
+        }
+
+        .wz____blog__date::before {
+            padding: 8px 0px; /* changed */
+
+            /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+        }
+        .wz____blog__date::after {
+            padding: 8px 0px; /* changed */
+
+            /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+        }
+
+        .blog__item:hover .wz____blog__date::before {
+            padding: 4px 0px; /* changed */
+        }
+        .blog__item:hover .wz____blog__date::after {
+            padding: 4px 0px; /* changed */
+        }
+        .blog__item:hover .wz____blog__date-day {
+            top: 19%; /* changed */
+        }
+        .blog__item:hover .wz____blog__date-month {
+            bottom: 19%; /* changed */
+        }
+
+        .wz____blog__date {
+            /* background-color: #a7f7e7; */
+
+            /* padding: 10px 20px; */
+            
+            /* text-align: center; */
+
+            /* color: #fff; */
+            /* max-width: 75px;
+            width: 100%; */
+            
+            /* position: absolute;
+            top: 45%; left: 50%;
+            transform: translate3d(-50%, -48%, 0); */
+            /* z-index: 2; */
+            /* line-height: 1; */
+        }
+        .wz____blog__date-day {
+            /* padding: 10px 5px; no changed */
+            /* width: 120px; no changed */
+            /* font-size: 23px; no changed */
+            top: 30%; /* changed */
+            
+            /* transition: top .2s linear, border .2s linear, color .2s linear; */
+        }
+        .wz____blog__date-month {
+            /* padding: 10px 5px; no changed */
+            /* width: 120px; no changed */
+            /* font-size: 23px; no changed */
+            bottom: 30%; /* changed */
+            
+            /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
+        }
+    }
+
+    
+    
     /* Desktop / Широкоугольные мониторы */
     @media (max-width: 350px) {
         /*   intro  */
@@ -3471,7 +3447,80 @@ hr {
         /*   logos  */
         /*   works  */
         /*   clients  */
+
         /*   blog  */
+
+            .wz____blog__photo-text {
+                margin: 0px 55px; /* changed */
+            }
+
+            .wz____blog__date::before {
+                padding: 5px 0px; /* changed */
+                font-size: 25px; /* changed */
+
+                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+            }
+            .wz____blog__date::after {
+                padding: 5px 0px; /* changed */
+                font-size: 25px; /* changed */
+
+                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+            }
+
+            .blog__item:hover .wz____blog__date::before {
+                padding: 1px 0px; /* changed */
+                font-size: 25px; /* changed */
+                height: 36%; /* changed */
+            }
+            .blog__item:hover .wz____blog__date::after {
+                padding: 1px 0px; /* changed */
+                font-size: 25px; /* changed */
+                height: 36%; /* changed */
+            }
+            .blog__item:hover .wz____blog__date-day {
+                top: 13%; /* changed */
+            }
+            .blog__item:hover .wz____blog__date-month {
+                bottom: 13%; /* changed */
+            }
+
+            .wz____blog__date {
+                /* background-color: #a7f7e7; */
+
+                /* padding: 10px 20px; */
+                
+                /* text-align: center; */
+
+                /* color: #fff; */
+                /* max-width: 75px;
+                width: 100%; */
+                
+                /* position: absolute;
+                top: 45%; left: 50%;
+                transform: translate3d(-50%, -48%, 0); */
+                /* z-index: 2; */
+                /* line-height: 1; */
+            }
+            .wz____blog__date-day {
+                /* padding: 10px 5px; no changed */
+                width: 100px; /* changed */
+                /* font-size: 23px; no changed */
+                top: 28%; /* changed */
+                
+                /* transition: top .2s linear, border .2s linear, color .2s linear; */
+            }
+            .wz____blog__date-month {
+                /* padding: 10px 5px; no changed */
+                width: 100px; /* changed */
+                /* font-size: 23px; no changed */
+                bottom: 28%; /* changed */
+                
+                /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
+            }
+
+
+
+
         /*   map  */
         /*   footer  */
         /*   subscribe  */
@@ -3492,10 +3541,78 @@ hr {
     }
 
 
+    @media (max-width: 300px) {
+        .wz____blog__photo-text {
+            margin: 0px 45px; /* changed */
+            font-size: 11px; /* changed */
+        }
+
+        .wz____blog__date::before {
+            padding: 6px 0px; /* changed */
+            font-size: 20px; /* changed */
+
+            /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+        }
+        .wz____blog__date::after {
+            padding: 6px 0px; /* changed */
+            font-size: 20px; /* changed */
+
+            /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+        }
+
+        .blog__item:hover .wz____blog__date::before {
+            /* padding: 1px 0px; no changed */
+            font-size: 20px; /* changed */
+            /* height: 36%; no changed */
+        }
+        .blog__item:hover .wz____blog__date::after {
+            /* padding: 1px 0px; no changed */
+            font-size: 20px; /* changed */
+            /* height: 36%; no changed */
+        }
+        .blog__item:hover .wz____blog__date-day {
+            top: 9%; /* changed */
+        }
+        .blog__item:hover .wz____blog__date-month {
+            bottom: 9%; /* changed */
+        }
+
+        .wz____blog__date {
+            /* background-color: #a7f7e7; */
+
+            /* padding: 10px 20px; */
+            
+            /* text-align: center; */
+
+            /* color: #fff; */
+            /* max-width: 75px;
+            width: 100%; */
+            
+            /* position: absolute;
+            top: 45%; left: 50%;
+            transform: translate3d(-50%, -48%, 0); */
+            /* z-index: 2; */
+            /* line-height: 1; */
+        }
+        .wz____blog__date-day {
+            /* padding: 10px 5px; no changed */
+            /* width: 100px; no changed */
+            /* font-size: 23px; no changed */
+            top: 25%; /* changed */
+            
+            /* transition: top .2s linear, border .2s linear, color .2s linear; */
+        }
+        .wz____blog__date-month {
+            /* padding: 10px 5px; no changed */
+            /* width: 100px; no changed */
+            /* font-size: 23px; no changed */
+            bottom: 25%; /* changed */
+            
+            /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
+        }
+    }
+
 /*     <| M E D I A |     */
-
-
-
 
 
 
