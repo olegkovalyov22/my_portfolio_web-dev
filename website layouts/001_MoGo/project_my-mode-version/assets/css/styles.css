@@ -1677,6 +1677,8 @@ hr {
 
             position: relative;
             z-index: 2;
+
+            /* transition: opacity .4s linear; - - - MY MODE - - - */
         }
         .blogs__item::after {
             content: "";
@@ -1750,8 +1752,8 @@ hr {
                 left: 125px;
             }
         } /* - - - MY MODE - - - */
-        .blogs__item:hover .blogs__title {color: #60ceba;}
-        .blogs__item:hover .blogs__date {color: #9ce8da;}
+        .blogs__item:hover .blogs__title {color: #85f9e4;/* #60ceba */}
+        .blogs__item:hover .blogs__date {color: #c6fbf1;/* #9ce8da */}
 
         .blogs__img {
             width: 120px;
@@ -1761,7 +1763,19 @@ hr {
         .blogs__content {
             padding: 0 10px 0 20px;
             z-index: 2;
+
+            /* opacity: 0; - - - MY MODE - - - */
+            /* visibility: hidden; - - - MY MODE - - - */
+            transition: opacity .4s linear; /* - - - MY MODE - - - */
         }
+        .blogs__item:hover .blogs__content {
+            /* visibility: visible; */
+            /* opacity: 1; */
+        } /* - - - MY MODE - - - */
+
+        .blogs__item:hover .blogs__title, .blogs__item:hover .blogs__date {
+            /* color: #fff; */
+        } /* - - - MY MODE - - - */
         
         .blogs__title {
             margin-top: 2px;
@@ -1842,6 +1856,7 @@ hr {
             /* color: #f20000; */
             /* text-shadow: 0; */
             text-shadow: none;
+
 			opacity: 1;
 			transition: text-shadow .2s linear;
 		} /* - - - MY MODE - - - */
@@ -1854,11 +1869,10 @@ hr {
         .inst__letter {
             width: 100%;
 
+            color: #fff;
             font-size: 25px;
             font-weight: 700;
-            color: #fff;
             text-transform: uppercase;
-
             cursor: pointer;
             text-align: center;
             text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
@@ -1901,16 +1915,14 @@ hr {
             /* background-color: #f8f8f8; */
         } /* - - - MY MODE - - - */
         .inst__l {
-			/* display: block; */
 			/* margin-top: 7px; */
-			
-			color: #999;
 
+			/* display: block; */
+			color: #999;
 			font-family: 'Roboto Flex', sans-serif;
 			font-size: 15px;
 			font-weight: 300;
 			font-style: italic;
-            
 			text-decoration: none;
 		} /* - - - MY MODE - - - */
 
@@ -1931,10 +1943,10 @@ hr {
             padding: 20px 15px; /* место 20px 0px - - - MY MODE - - - */
 
             color: #fff;
+            background: linear-gradient(to right, #f8f8f8, #b5b5b5, #888888, #888888, #888888, #b5b5b5, #f8f8f8); /* - - - MY MODE - - - */
+            /* background: linear-gradient(to right, #f8f8f8, #e8e8e8, #d8d8d8, #c8c8c8, #b8b8b8, #a8a8a8, #a8a8a8, #a8a8a8 #b8b8b8, #c8c8c8, #d8d8d8, #e8e8e8, #f8f8f8); */ /* - - - MY MODE - - - */
             font-size: 14px;
             text-align: center;
-            background: linear-gradient(to right, #f8f8f8, #b5b5b5, #888888, #888888, #888888, #b5b5b5, #f8f8f8); /* - - - MY MODE - - - */
-            /* background: linear-gradient(to right, #f8f8f8, #e8e8e8, #d8d8d8, #c8c8c8, #b8b8b8, #a8a8a8, #a8a8a8, #a8a8a8 #b8b8b8, #c8c8c8, #d8d8d8, #e8e8e8, #f8f8f8); */
             border-top: 1px solid #e5e5e5;
             text-shadow: 0 0 3px #333; /* #f38181 */
             
@@ -2348,19 +2360,17 @@ hr {
                         
 
 
-            .simplUs____blog__photo-text {
-                margin: 0px 64px; /* changed */
-            }
+            .simplUs____blog__photo-text {margin: 0px 64px; /* changed */}
 
             .simplUs____blog__date::before {
-                font-size: 22px; /* changed */
                 padding: 8px 0px; /* changed */
+                font-size: 22px; /* changed */
 
                 /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
             .simplUs____blog__date::after {
-                font-size: 22px; /* changed */
                 padding: 8px 0px; /* changed */
+                font-size: 22px; /* changed */
 
                 /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
             }
@@ -2726,16 +2736,16 @@ hr {
                 padding: 10px 5px; /* changed */
                 width: 120px; /* changed */
                 font-size: 23px; /* changed */
+
                 top: 33%; /* changed */
-                
                 /* transition: top .2s linear, border .2s linear, color .2s linear; */
             }
             .simplUs____blog__date-month {
                 padding: 10px 5px; /* changed */
                 width: 120px; /* changed */
                 font-size: 23px; /* changed */
+
                 bottom: 33%; /* changed */
-                
                 /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
             }
 
@@ -2905,8 +2915,8 @@ hr {
                 /* padding-left: 0; */
             } /* - - - MY MODE - - - */
             .footer__title {
-                text-align: center;
                 font-size: 20px;
+                text-align: center;
             } /* */ /* - - - MY MODE - - - */
 
         /*   subscribe  */
