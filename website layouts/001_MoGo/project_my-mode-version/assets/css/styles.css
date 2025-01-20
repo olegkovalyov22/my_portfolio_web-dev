@@ -582,6 +582,7 @@ hr {
             height: auto;
         }
         .devices__item--bg {
+            /* overflow: hidden; */
             width: 480px;
             height: 40px;
             background: #fff;
@@ -590,7 +591,6 @@ hr {
             position: absolute;
             bottom: -40px;
             z-index: 2;
-                                   /* overflow: hidden; */
         } /* - - - MY MODE - - - */
         .devices__shadow {
             width: 520px;
@@ -665,8 +665,6 @@ hr {
         }
 
     /*     A c c o r d i o n     */
-        .accordion {}
-
         .accordion__item {
             margin-top: 10px;
             border: 1px solid #e5e5e5;
@@ -742,18 +740,18 @@ hr {
 
         .reviews__photo {
             display: block;
-            position: absolute;
-            top: 5px;
-            left: 10px;
-            z-index: 1;
-
             width: 180px;
             height: 180px;
-
+            
             border: 5px solid #95e1d3;
             border-radius: 50%;
             filter: drop-shadow(0px 0px 1px); /* MY MODE */
             box-shadow: 0 0 1px;
+            
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            z-index: 1;
         }  /* - - - modified - - -*/
 
         .reviews__text {
@@ -911,7 +909,7 @@ hr {
         .clients__photo {
             width: 110px;
             height: 110px;
-            border: 0px solid #099b80; /*1px or 2px*/ /*#099b80 or #000*/  /* - - - MY MODE - - - */
+            border: 3px solid #f38181; /*1px or 2px*/ /*#f38181 or #099b80 or #000*/  /* - - - MY MODE - - - */
             border-radius: 50%;
 
             position: absolute;
@@ -919,13 +917,9 @@ hr {
             left: 40px;
             z-index: 1;
             
-            transition: border .3s linear;
-        }
-        .clients__photo:hover {
-            border: 2px solid #099b80;
-        }
-
-        .clients__content {}
+            transition: border .2s linear;
+        }  /* - - - modified - - -*/
+        .clients__photo:hover {/*border: 2px solid #099b80;*/ /*#099b80 or #f38181*/}  /* - - - MY MODE - - - */
 
         .clients__name {
             margin-bottom: 5px;
@@ -942,6 +936,7 @@ hr {
             font-weight: 300;
             font-style: italic;
         }
+
         .clients__text {
             color: #999;
             font-family: 'Roboto', sans-serif;
@@ -974,13 +969,6 @@ hr {
             max-width: 100%;
             height: auto;
         }
-                                                                    /* .blog__photo::before {
-                                                                        content: '';
-                                                                        display: block;
-                                                                        width: 100px;
-                                                                        height: 10px;
-                                                                        background-color: #95e1d3;
-                                                                    } */
 
         .blog__date {
             padding: 10px 20px;
@@ -1007,10 +995,6 @@ hr {
         .blog__item:hover .blog__date {background-color: #23c5a8;}  /* - - - MY MODE - - - */
         .blog__item:hover .blog__title {text-decoration: underline;}  /* - - - MY MODE - - - */
 
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-
 /* Simple user - Пользователь без подписки - .simplUs____  */
 /* Subscribed user - Пользователь с подпиской - .subsUs__ --> пока что не пригодится, но
                                                             НО, как вариант, для юзеров с подпиской,
@@ -1022,7 +1006,7 @@ hr {
             margin-bottom: 12px;
             background-color: #000;
             position: relative;
-        }
+        }  /* - - - MY MODE - - - */
         .simplUs____blog__photo {            
             display: block;
 
@@ -1035,7 +1019,7 @@ hr {
             z-index: 1;
 
             transition: opacity .2s linear;
-        }
+        }  /* - - - MY MODE - - - */
         .simplUs____blog__photo-text {
             margin: 0px 9px;
 
@@ -1049,7 +1033,7 @@ hr {
             top: 50%;
             z-index: 1;
             transform: translateY(-50%);
-        }
+        }  /* - - - MY MODE - - - */
 
         .simplUs____blog__date::before {
             overflow: hidden;
@@ -1073,7 +1057,7 @@ hr {
             z-index: 1;
 
             transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
-        }
+        }  /* - - - MY MODE - - - */
         .simplUs____blog__date::after {
             overflow: hidden;
             padding: 15px 0px;
@@ -1094,43 +1078,43 @@ hr {
             z-index: 1;
 
             transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear;
-        }
+        }  /* - - - MY MODE - - - */
 
-        .blog__item:hover .simplUs____blog__photo {opacity: .2;}
+        .blog__item:hover .simplUs____blog__photo {opacity: .2;}  /* - - - MY MODE - - - */
         .blog__item:hover .simplUs____blog__date::before {
             padding: 3px 0px;
             height: 40%;
             color: #95fce9;
             background: #d5fff7;
-        }
+        }  /* - - - MY MODE - - - */
         .blog__item:hover .simplUs____blog__date::after {
             height: 40%;
             background: #70c1b2;
             color: #4da797;
             padding: 10px 0px;
-        }
+        }  /* - - - MY MODE - - - */
         .blog__item:hover .simplUs____blog__date-day {
             color: #fff;
             border-bottom: 2px solid #56c6b1;
             /* text-shadow: 0px 2px 0px #56c6b1; */  /* версия для объёмных символов на Закрытом доступе без подписки */
             top: 22%;
-        }
+        }  /* - - - MY MODE - - - */
         .blog__item:hover .simplUs____blog__date-month {
             color: #fff; /* ЛИБО ЛИБО место color: #fff; в .blog__item:hover .icon-open */
             border-top: 2px solid #56c6b1;
             /* text-shadow: 0px 2px 0px #56c6b1; */  /* версия для объёмных символов на Закрытом доступе без подписки */
             bottom: 22%;
-        }
+        }  /* - - - MY MODE - - - */
         .blog__item:hover .icon-lock {
             color: #56c6b1;
             /* text-shadow: 0px 2px 0px #fff; */  /* версия для объёмных символов на Закрытом доступе без подписки */
-        }
+        }  /* - - - MY MODE - - - */
         .blog__item:hover .icon-open {
             /*color: #fff;  ЛИБО ЛИБО место color: #fff; в .blog__item:hover .wz____blog__date-month */
             /* text-shadow: 0px 2px 0px #56c6b1; */  /* версия для объёмных символов на Закрытом доступе без подписки */
-        }
+        }  /* - - - MY MODE - - - */
 
-        .wz____blog__date {}
+        /* .wz____blog__date {} */
 
 
         .simplUs____blog__date-day {
@@ -1156,7 +1140,7 @@ hr {
             
             transform: translateX(-50%);
             transition: top .2s linear, border .2s linear, color .2s linear;
-        }
+        }  /* - - - MY MODE - - - */
         .simplUs____blog__date-month {
             padding: 10px 5px;
 
@@ -1179,14 +1163,14 @@ hr {
             
             transform: translateX(-50%);
             transition: bottom .2s linear, border .2s linear, color .2s linear;
-        }
+        }  /* - - - MY MODE - - - */
         .icon-lock {
             color: #fff;
             transition: color .2s linear;
             /* text-shadow: 0px 2px 0px #56c6b1; */   /* версия для объёмных символов на Закрытом доступе без подписки */
-        }
-        .icon-arrow {/* color: #fff; */  /* вариант цвета для стрелки между Закрытым и Открытым замком */}
-        .icon-open {/* color: #000; */}
+        }  /* - - - MY MODE - - - */
+        .icon-arrow {/* color: #fff; */  /* вариант цвета для стрелки между Закрытым и Открытым замком */}  /* - - - MY MODE - - - */
+        .icon-open {/* color: #000; */}  /* - - - MY MODE - - - */
 
         /* .wz____blog__date-day {
             padding: 10px 25px;
@@ -1194,10 +1178,10 @@ hr {
             line-height: 1;
             width: 90px;
 
-                font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 30px;
             font-weight: 700;
-                font-style: normal;
+            font-style: normal;
             color: #fff;
             background-color: #a7f7e7;
             border: 2px solid #56c6b1;
@@ -1216,10 +1200,10 @@ hr {
             line-height: 1;
             width: 90px;
 
-                font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto', sans-serif;
             font-size: 20px;
             font-weight: 700;
-                font-style: italic;
+            font-style: italic;
             color: #fff;
             background-color: #a7f7e7;
             border: 2px solid #56c6b1;
@@ -1279,10 +1263,6 @@ hr {
     / *300px* /  transition: bottom .2s linear, border .2s linear, color .2s linear;
 }           */
 
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-
         .blog__content { margin-bottom: 10px;}
 
         .blog__title {
@@ -1317,7 +1297,6 @@ hr {
             border-top: 1px solid #e5e5e5;
         }
 
-        .blog-stat {}
         .blog-stat__item {
             margin-right: 10px;
             display: inline-block;
@@ -1337,9 +1316,6 @@ hr {
             color: inherit;
             text-decoration: none;
         }
-        .map__title a:hover {
-            /* text-decoration: underline; */ /* - - - MY MODE - - - */
-        }
         .map__title::after {
             margin: 10px auto 0px;
 
@@ -1350,7 +1326,7 @@ hr {
             background-color: #f38181;
         }
         .map__title div {margin: 0 auto 5px;} /*???*/ /* - - - MY MODE - - - */
-        .map__title a:hover {color: #d83939;}
+        .map__title a:hover {color: #d83939;}  /* - - - MY MODE - - - */
 
         .map:hover .map__title div {animation: map-click-icon 1s ease-in-out infinite;} /* - - - MY MODE - - - */
         @keyframes map-click-icon {
@@ -1674,17 +1650,17 @@ hr {
             transition: border .1s linear; /* opacity .2s linear - нужно ли?*/
         }  /* - - - modified - - - */
 
-        .fv________instagram__item img {
-            /* margin: 0 auto; */
+        /* .fv________instagram__item img {
+            / * margin: 0 auto; * /
 
             display: block;
-            /* - - - MY MODE - - - */ /* Найдена ошибка - Надо убрать max- у -width */
-            width: 100%;
+            / * - - - MY MODE - - - * / /* Найдена ошибка - Надо убрать max- у -width * /
+            width: 100%;  / * - - - modified - - - * /
             height: auto;
             border: 1px solid #fff;
             
             transition: opacity .2s linear;
-        } /* уже не нужен */
+        } уже не нужен */
 
         .inst__img {
             position: relative;
@@ -1701,7 +1677,6 @@ hr {
         .instagram__item:hover .inst__img img {opacity: 0.1;}
         .instagram__item:hover .inst__letter {
             /* color: #f20000; */
-            /* text-shadow: 0; */
             text-shadow: none;
 
 			opacity: 1;
@@ -1754,7 +1729,7 @@ hr {
 			/* color: #fcc600; */
             /* text-shadow: 2px 0 #fcc600, -2px 0 #fcc600, 0 2px #fcc600, 0 -2px #fcc600, 1px 1px #fcc600, -1px -1px #fcc600, 1px -1px #fcc600, -1px 1px #fcc600; */
         } /* - - - MY MODE - - - */  /* for 2 version */
-  /* - - - modified - - - */
+
         .inst__link {
             margin-top: 7px;
             width: 100%;
@@ -1776,11 +1751,10 @@ hr {
         .inst__link:hover .inst__l {
             text-decoration: none;
             text-shadow: 1px 1px 1px #3f51b5; /* #000 */
-        } /* - version 2 - */ /* - - - MY MODE - - - */
+        } /* - - - MY MODE - - - */ /* - version 2 - */
         
     /*     C o p y r i g h t     */
         .copyright {
-            /* overflow: hidden; */
             margin: 0 -15px; /* - - - MY MODE - - - */
             padding: 20px 15px; /* место 20px 0px - - - MY MODE - - - */
 
@@ -1793,7 +1767,7 @@ hr {
             
             transition: all 2s linear; /* - - - MY MODE - - - */
             /* animation: copyright-bg 2s infinite; */
-        }
+        }  /* - - - modified - - - */
         .copyright:hover {
             color: #333;
             background: linear-gradient(to right, #888888, #b5b5b5, #f8f8f8, #f8f8f8, #f8f8f8, #b5b5b5, #888888);
@@ -1809,7 +1783,7 @@ hr {
         .copyright span:hover {
             /* color: #f38181; */
             text-decoration: underline;
-        }
+        }  /* - - - MY MODE - - - */
 
         /* Вариант 4 - менее грузит, не работает плавность */
             /* @keyframes copyright-bg {
@@ -1983,20 +1957,6 @@ hr {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*     | M E D I A |>     */
     
     /* Desktop / Широкоугольные мониторы */
@@ -2004,149 +1964,58 @@ hr {
 
     /* Laptop / Ноутбуки */
     @media (max-width: 1230px) {
-
-        /*   header  */
-        /*   nav  */
-
         /*   intro   */
             .intro__title {font-size: 120px;}
             .intro__suptitle {font-size: 52px;}
 
-        /*   btn  */
-        /*   slider  */
-        /*   section  */
-        /*   card (About&Team)  */
-        /*   social (Team)  */
-        /*   statistics  */
-        /*   services  */
-        /*   devices  */
-        /*   we  do  */  
-        /*   accordion  */
-
         /*   reviews  */
             .reviews__text {font-size: 20px;}
-            /* .reviews__photo {
-                width: 180px;
-                height: 180px;
-            } */
 
-        /*   logos  */
-        /*   works  */
-        /*   clients  */
-
-        /*   blog  */
-
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-
-
-
-
-
-
-
+        /*   blog  */  /*  - - - MY MODE - - - */
             .simplUs____blog__photo-text {
-                margin: 0px 68px; /* changed */
-                font-size: 12px; /* changed */
+                margin: 0px 68px;
+                font-size: 12px;
             }
 
             .simplUs____blog__date::before {
-                padding: 10px 7px; /* changed */
-                font-size: 25px; /* changed */
-                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+                padding: 10px 7px;
+                font-size: 25px;
             }
             .simplUs____blog__date::after {
-                padding: 10px 7px; /* changed */
-                font-size: 25px; /* changed */
-                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+                padding: 10px 7px;
+                font-size: 25px;
             }
      
             .blog__item:hover .simplUs____blog__date::before {
-                padding: 0px 0px; /* changed */
-                height: 36%; /* changed */
-                line-height: 1.4; /* changed */
+                padding: 0px 0px;
+                height: 36%;
+                line-height: 1.4;
             }
             .blog__item:hover .simplUs____blog__date::after {
-                padding: 0px 0px; /* changed */
-                height: 36%; /* changed */
-                line-height: 1.4; /* changed */
+                padding: 0px 0px;
+                height: 36%;
+                line-height: 1.4;
             }
-            .blog__item:hover .simplUs____blog__date-day {top: 15%; /* changed */}
-            .blog__item:hover .simplUs____blog__date-month {bottom: 15%; /* changed */}
+            .blog__item:hover .simplUs____blog__date-day {top: 15%;}
+            .blog__item:hover .simplUs____blog__date-month {bottom: 15%;}
 
-            .simplUs____blog__date {
-                /* padding: 10px 20px; */
-                
-                /* text-align: center; */
+            .simplUs____blog__date-day {top: 30%;}
+            .simplUs____blog__date-month {bottom: 30%;}
 
-                /* color: #fff; */
-                /* max-width: 75px;
-                width: 100%; */
-                
-                /* position: absolute;
-                top: 45%; left: 50%;
-                transform: translate3d(-50%, -48%, 0); */
-                /* z-index: 2; */
-                /* line-height: 1; */
-            }
-            .simplUs____blog__date-day {
-                /* padding: 10px 5px; no changed */
-                /* width: 90px; no changed */
-                /* font-size: 20px; no changed */
-                
-                top: 30%; /* changed */
-                /* transition: top .2s linear, border .2s linear, color .2s linear; */
-            }
-            .simplUs____blog__date-month {
-                /* padding: 10px 5px; no changed */
-                /* width: 90px; no changed */
-                /* font-size: 20px; no changed */
-
-                bottom: 30%; /* changed */
-                /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
-            }
-
-    
-
-
-
-
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-
-        /*   map  */
-        /*   footer  */
-        /*   subscribe  */
-
-        /*   blogs  */
+        /*   blogs  */  /* - - - MY MODE - - - */
             .blogs__title {
                 margin-bottom: 2px;
                 font-size: 11px;
                 line-height: 1.3;
-            } /* - - - MY MODE - - - */
-            .blogs__date {font-size: 12px;} /* - - - MY MODE - - - */
-
-        /*   instagram  */
-        /*   copyright  */
+            }
+            .blogs__date {font-size: 12px;}
     }
 
     /* Tablet Landscape / Планшет в альбомном режиме */
     @media (max-width: 990px) {
-        
-        /*   header  */
-        /*   nav  */
-
         /*   intro   */
             .intro__title {font-size: 80px;}
             .intro__suptitle {font-size: 32px;}
-
-        /*   btn  */
-        /*   slider  */
-        /*   section  */
-        /*   card (About&Team)  */
-        /*   social (Team)  */
 
         /*   statistics  */
             .stat {justify-content: center;}
@@ -2163,10 +2032,6 @@ hr {
             .services__item {width: 50%;}
             .services__item--border {border-bottom: 0;}
 
-        /*   devices  */
-        /*   we  do  */  
-        /*   accordion  */
-
         /*   reviews  */
             .reviews .slick-slider {padding: 0 30px;}
             .reviews__item {padding-left: 185px;}
@@ -2177,9 +2042,6 @@ hr {
                 left: 20px;
             }
             .reviews__btn, .slick-arrow { top: 36%;}
-
-        /*   logos  */
-        /*   works  */
 
         /*   clients  */
             .clients {
@@ -2192,89 +2054,27 @@ hr {
             }
             .clients__item:last-child {margin-bottom: 0;}
 
-        /*   blog  */
-
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-                        
-                        
-
-
-            .simplUs____blog__photo-text {margin: 0px 64px; /* changed */}
+        /*   blog  */  /*  - - - MY MODE - - - */
+            .simplUs____blog__photo-text {margin: 0px 64px;}
 
             .simplUs____blog__date::before {
-                padding: 8px 0px; /* changed */
-                font-size: 22px; /* changed */
-
-                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+                padding: 8px 0px;
+                font-size: 22px;
             }
             .simplUs____blog__date::after {
-                padding: 8px 0px; /* changed */
-                font-size: 22px; /* changed */
-
-                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+                padding: 8px 0px;
+                font-size: 22px;
             }
 
-            .blog__item:hover .simplUs____blog__date::before {
-                /* height: 36%; no changed */
-                line-height: 1.5; /* changed */
-            }
-            .blog__item:hover .simplUs____blog__date::after {
-                /* height: 36%; no changed */
-                line-height: 1.5; /* changed */
-            }
-            .blog__item:hover .simplUs____blog__date-day {
-            }
-            .blog__item:hover .simplUs____blog__date-month {
-            }
-            .simplUs____blog__date {
-                /* padding: 10px 20px; */
-                
-                /* text-align: center; */
+            .blog__item:hover .simplUs____blog__date::before {line-height: 1.5;}
+            .blog__item:hover .simplUs____blog__date::after {line-height: 1.5;}
 
-                /* color: #fff; */
-                /* max-width: 75px;
-                width: 100%; */
-                
-                /* position: absolute;
-                top: 45%; left: 50%;
-                transform: translate3d(-50%, -48%, 0); */
-                /* z-index: 2; */
-                /* line-height: 1; */
-            }
-            .simplUs____blog__date-day {
-                /* transition: top .2s linear, border .2s linear, color .2s linear; */
-            }
-            .simplUs____blog__date-month {
-                /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
-            }
+        /*   footer  */  /* - - - modified - - - */
+            .footer__col--first {width: 100%;}  /* - - - MY MODE - - - */
+            .footer__col--second {width: 65%;}  /* - - - MY MODE - - - */
+            .footer__col--third {width: 35%;}  /* - - - MY MODE - - - */
 
-
-
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-
-        /*   map  */
-
-        /*   footer  */
-            .footer__col--first {width: 100%;} /* - - - MY MODE - - - */
-            .footer__col--second {
-                width: 65%;
-                /* padding-right: 15px; */
-            } /* - - - MY MODE - - - */
-            .footer__col--third {
-                width: 35%;
-                /* padding-left: 15px; */
-            } /* - - - MY MODE - - - */
-
-            /* .footer__col--first {width: 100%;}
-            .footer__col--second, .footer__col--third {width: 50%;} */
-
-        /*   subscribe  */
-
-        /*   blogs  */
+        /*   blogs  */  /* - - - MY MODE - - - */
             @keyframes blogs-bg-0 {
                 from {
                     background-color:   #257264;
@@ -2285,7 +2085,7 @@ hr {
                     background-color: none;
                     width: 129px;
                 }
-            } /* - - - MY MODE - - - */
+            }
             @keyframes blogs-bg-1 {
                 from {
                     background-color: none;
@@ -2296,112 +2096,71 @@ hr {
                     width: 75%;
                     left: 125px;
                 }
-            } /* - - - MY MODE - - - */
+            }
             .blogs__title {
                 margin-bottom: 5px;
 
                 font-size: 14px;
                 line-height: 1.5;
-            } /* - - - MY MODE - - - */
-            .blogs__date {font-size: 14px;} /* - - - MY MODE - - - */
+            }
+            .blogs__date {font-size: 14px;}
 
-        /*   instagram  */
-            .instagram {
-                /* justify-content: flex-start; */
-            } /* убрать в - - - MY MODE - - - */
-            .instagram__item {
-                /* width: auto; */
-                /* border-right: 1px solid #fff; */
-            } /* убрать в - - - MY MODE - - - */
-            .inst__letter {font-size: 30px;} /* - - - MY MODE - - - */
+        /*   instagram  */  /* - - - MY MODE - - - */
+            .inst__letter {font-size: 30px;}
 
-        /*   copyright  */
     }
-
-
-
 
 
     @media (max-width: 950px) {
+        /*   blog  */
+            .simplUs____blog__photo-text {margin: 0px 48px;}
 
-        .simplUs____blog__photo-text {margin: 0px 48px; /* changed */}
+            .blog__item:hover .simplUs____blog__date::before {
+                padding: 0px 15px;
+                font-size: 18px;
+                line-height: 1.6;
+            }
+            .blog__item:hover .simplUs____blog__date::after {
+                padding: 0px 15px;
+                font-size: 18px;
+                line-height: 1.6;
+            }
+            .blog__item:hover .simplUs____blog__date-day {top: 12%;}
+            .blog__item:hover .simplUs____blog__date-month {bottom: 13%;}
 
-        .simplUs____blog__date::before {
-            /* transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
-        }
-        .simplUs____blog__date::after {
-            /* transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
-        }
-
-        .blog__item:hover .simplUs____blog__date::before {
-            padding: 0px 15px; /* changed */
-            font-size: 18px; /* changed */
-            line-height: 1.6; /* changed */
-        }
-        .blog__item:hover .simplUs____blog__date::after {
-            padding: 0px 15px; /* changed */
-            font-size: 18px; /* changed */
-            line-height: 1.6; /* changed */
-        }
-        .blog__item:hover .simplUs____blog__date-day {top: 12%; /* changed */}
-        .blog__item:hover .simplUs____blog__date-month {bottom: 13%; /* changed */}
-
-        .simplUs____blog__date-day {
-            padding: 10px 5px 10px; /* changed */
-            font-size: 19px; /* changed */
-            top: 29%; /* changed */
-            /* transition: top .2s linear, border .2s linear, color .2s linear; */
-        }
-        .simplUs____blog__date-month {
-            padding: 8px 5px 10px; /* changed */
-            font-size: 18px; /* changed */
-            bottom: 29%; /* changed */
-            /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
-        }
-    }
-
- 
-
+            .simplUs____blog__date-day {
+                padding: 10px 5px 10px;
+                font-size: 19px;
+                top: 29%;
+            }
+            .simplUs____blog__date-month {
+                padding: 8px 5px 10px;
+                font-size: 18px;
+                bottom: 29%;
+            }
+    }  /*  - - - MY MODE - - - */
 
     @media (max-width: 850px) {
+        /*   blog  */
+            .simplUs____blog__photo-text {margin: 0px 35px;}
 
-        .simplUs____blog__photo-text {margin: 0px 35px; /* changed */}
+            .simplUs____blog__date::before {font-size: 19px;}
+            .simplUs____blog__date::after {font-size: 19px;}
+            
+            .blog__item:hover .simplUs____blog__date::before {
+                padding: 0px 10px;
+                line-height: 1.45;
+            }
+            .blog__item:hover .simplUs____blog__date::after {
+                padding: 0px 10px;
+                line-height: 1.45;
+            }
+            .blog__item:hover .simplUs____blog__date-day {top: 9%;}
+            .blog__item:hover .simplUs____blog__date-month {bottom: 10%;}
 
-        .simplUs____blog__date::before {
-            font-size: 19px; /* changed */
-            /* transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
-        }
-        .simplUs____blog__date::after {
-            font-size: 19px; /* changed */
-            /* transition: font-size .2s linear, line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
-        }
-        
-        .blog__item:hover .simplUs____blog__date::before {
-            padding: 0px 10px; /* changed */
-            line-height: 1.45; /* changed */
-        }
-        .blog__item:hover .simplUs____blog__date::after {
-            padding: 0px 10px; /* changed */
-            line-height: 1.45; /* changed */
-        }
-        .blog__item:hover .simplUs____blog__date-day {top: 9%; /* changed */}
-        .blog__item:hover .simplUs____blog__date-month {bottom: 10%; /* changed */}
-
-        .simplUs____blog__date-day {
-            top: 27%; /* changed */
-            /* transition: top .2s linear, border .2s linear, color .2s linear; */
-        }
-        .simplUs____blog__date-month {
-            bottom: 27%; /* changed */
-            /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
-        }
-    }
-
-             
-
-
-
-
+            .simplUs____blog__date-day {top: 27%;}
+            .simplUs____blog__date-month {bottom: 27%;}
+    }  /*  - - - MY MODE - - - */
 
 
     /* Tablet Portrait / Планшет в портретном режиме */
@@ -2437,8 +2196,6 @@ hr {
             .slider__text {display: none;}
             .slider__item.active::before {width: 50%;}
 
-        /*   btn  */
-
         /*   section  */
             .section {padding: 40px 0;}
             .section--devices {padding-bottom: 0;}
@@ -2455,14 +2212,9 @@ hr {
             }
             .card__item:last-child {margin-bottom: 0;}
 
-        /*   social (Team)  */
-        /*   statistics  */
-            /* .stat__item {
-                width: 50%;
-            }
-            .stat__item--2 {
-                width: 100%;
-            } */
+        /*   statistics  */  /* ? interesting variant */  /*  - - - MY MODE - - - */
+            /* .stat__item {width: 50%;} */
+            /* .stat__item--2 {width: 100%;} */
 
         /*   services  */
             .services {justify-content: center;}
@@ -2474,13 +2226,9 @@ hr {
             }
             .services__icon {left: 0;}
 
-        /*   devices  */
-
         /*   we  do  */
             .wedo__item {width: 100%;}
             .wedo__img {display: none;}
-
-        /*   accordion  */
 
         /*   reviews  */
             .reviews__btn, .slick-arrow {top: 25%;}
@@ -2504,8 +2252,6 @@ hr {
                 width: 50%;
             }
 
-        /*   clients  */
-
         /*   blog  */
             .blog {
                 margin: 0 auto;
@@ -2519,95 +2265,57 @@ hr {
             .blog__item:last-child {margin-bottom: 0;}
 
 
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-
             .simplUs____blog__photo-text {
-                margin: 0px 13px; /* changed */
-                font-size: 13px; /* changed */
-            }
+                margin: 0px 13px;
+                font-size: 13px;
+            }  /*  - - - MY MODE - - - */
 
             .simplUs____blog__date::before {
                 padding: 15px 0px; /* changed, but ..???.. */
-                font-size: 31px; /* changed */
-
-                /* transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
-            }
+                font-size: 31px;
+            }  /*  - - - MY MODE - - - */
             .simplUs____blog__date::after {
                 padding: 15px 0px; /* changed, but ..???.. */
-                font-size: 31px; /* changed */
-
-                /* transition: height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
-            }
+                font-size: 31px;
+            }  /*  - - - MY MODE - - - */
 
             .blog__item:hover .simplUs____blog__date::before {
-                padding: 3px 0px; /* changed */
-                height: 40%; /* changed */
-                font-size: 31px; /* changed */
-                line-height: 1.5; /* changed */
-            }
+                padding: 3px 0px;
+                height: 40%;
+                font-size: 31px;
+                line-height: 1.5;
+            }  /*  - - - MY MODE - - - */
             .blog__item:hover .simplUs____blog__date::after {
-                padding: 10px 0px; /* changed */
-                height: 40%; /* changed */
-                font-size: 31px; /* changed */
-                line-height: 1.5; /* changed */
-            }
-            .blog__item:hover .simplUs____blog__date-day {top: 22%; /* changed */}
-            .blog__item:hover .simplUs____blog__date-month {bottom: 22%; /* changed */}
+                padding: 10px 0px;
+                height: 40%;
+                font-size: 31px;
+                line-height: 1.5;
+            }  /*  - - - MY MODE - - - */
+            .blog__item:hover .simplUs____blog__date-day {top: 22%;}  /*  - - - MY MODE - - - */
+            .blog__item:hover .simplUs____blog__date-month {bottom: 22%;}  /*  - - - MY MODE - - - */
 
-            .simplUs____blog__date {
-                /* background-color: #a7f7e7; */
-
-                /* padding: 10px 20px; */
-                
-                /* text-align: center; */
-
-                /* color: #fff; */
-                /* max-width: 75px;
-                width: 100%; */
-                
-                /* position: absolute;
-                top: 45%; left: 50%;
-                transform: translate3d(-50%, -48%, 0); */
-                /* z-index: 2; */
-                /* line-height: 1; */
-            }
             .simplUs____blog__date-day {
-                padding: 10px 5px; /* changed */
-                width: 120px; /* changed */
-                font-size: 23px; /* changed */
+                padding: 10px 5px;
+                width: 120px;
+                font-size: 23px;
 
-                top: 33%; /* changed */
-                /* transition: top .2s linear, border .2s linear, color .2s linear; */
-            }
+                top: 33%;
+            }  /*  - - - MY MODE - - - */
             .simplUs____blog__date-month {
-                padding: 10px 5px; /* changed */
-                width: 120px; /* changed */
-                font-size: 23px; /* changed */
+                padding: 10px 5px;
+                width: 120px;
+                font-size: 23px;
 
-                bottom: 33%; /* changed */
-                /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
-            }
-
+                bottom: 33%;
+            }  /*  - - - MY MODE - - - */
 
 
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-
-        /*   map  */
-
-        /*   footer  */
-            /* убрать в MY MODE 
-            .footer__col--second, .footer__col--third {width: 100%;}*/
-            .footer__col--second {width: 55%;} /* - - - MY MODE - - - */
-            .footer__col--third {width: 45%;} /* - - - MY MODE - - - */
+        /*   footer  */  /* - - - MY MODE - - - */
+            .footer__col--second {width: 55%;}
+            .footer__col--third {width: 45%;}
         
-            /*   subscribe  */
-
-        /*   blogs  */
-            .blogs__item::before {width: 120px;} /* - - - MY MODE - - - */
+        /*   blogs  */  /* - - - MY MODE - - - */
+            .blogs__item::before {width: 120px;}
             @keyframes blogs-bg-0 {
                 from {
                     background-color:   #257264;
@@ -2618,7 +2326,7 @@ hr {
                     background-color: none;
                     width: 0px;
                 }
-            } /* - - - MY MODE - - - */
+            }
             @keyframes blogs-bg-1 {
                 from {
                     background-color: none;
@@ -2629,42 +2337,31 @@ hr {
                     width: 100%;
                     left: 0%;
                 }
-            } /* - - - MY MODE - - - */
+            }
             .blogs__title {
                 margin-bottom: 2px;
                 font-size: 11px;
                 line-height: 1.3;
-            } /* - - - MY MODE - - - */
-            .blogs__date {font-size: 12px;} /* - - - MY MODE - - - */
+            }
+            .blogs__date {font-size: 12px;}
 
-        /*   instagram  */
-            .inst__letter {font-size: 50px;} /* - - - MY MODE - - - */
-
-        /*   copyright  */
+        /*   instagram  */  /* - - - MY MODE - - - */
+            .inst__letter {font-size: 50px;}
 
     }
 
     /* Mobile devices / Телефоны */
     @media (max-width: 575px) {
-        
-        /*   header  */
-        /*   nav  */
 
         /*   intro   */
             .intro__title {font-size: 40px;}
             .intro__suptitle {font-size: 22px;}
-
-        /*   btn  */
-        /*   slider  */
 
         /*   section  */
             .section__header {margin-bottom: 50px;}
             .section__suptitle {font-size: 20px;}
             .section__title {font-size: 24px;}
             .section__title::after {margin: 20px auto;}
-
-        /*   card (About&Team)  */
-        /*   social (Team)  */
 
         /*   statistics  */
             .stat__item {
@@ -2674,8 +2371,6 @@ hr {
             .stat__item:last-child {border-bottom: 0;}
             .stat__count {font-size: 52px;}
 
-        /*   services  */
-
         /*   devices  */
             .devices {max-width: 320px;}
             .devices__item--iphone {
@@ -2683,9 +2378,6 @@ hr {
                 bottom: -50px;
                 right: -80px;
             }
-
-        /*   we  do  */  
-        /*   accordion  */
 
         /*   reviews  */
             .reviews, .slick-slider {padding: 0px;}
@@ -2705,60 +2397,39 @@ hr {
             .clients__photo {position: static;}
             .clients__text::before {margin: 15px auto;}
 
-        /*   blog  */
-
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-
+        /*   blog  */  /*  - - - MY MODE - - - */
             .simplUs____blog__photo-text {
-                margin: 0px 32px; /* changed */
-                font-size: 12px; /* changed */
+                margin: 0px 32px;
+                font-size: 12px;
             }
 
             .simplUs____blog__date::before {
-                padding: 10px 0px; /* changed */
-                font-size: 27px; /* changed */
-
-                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+                padding: 10px 0px;
+                font-size: 27px;
             }
             .simplUs____blog__date::after {
-                padding: 10px 0px; /* changed */
-                font-size: 27px; /* changed */
-
-                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+                padding: 10px 0px;
+                font-size: 27px;
             }
 
             .blog__item:hover .simplUs____blog__date::before {
-                padding: 8px 0px; /* changed */
-                font-size: 27px; /* changed */
-                line-height: 1.4; /* changed */
+                padding: 8px 0px;
+                font-size: 27px;
+                line-height: 1.4;
             }
             .blog__item:hover .simplUs____blog__date::after {
-                padding: 8px 0px; /* changed */
-                font-size: 27px; /* changed */
-                line-height: 1.4; /* changed */
+                padding: 8px 0px;
+                font-size: 27px;
+                line-height: 1.4;
             }
 
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-/* WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE  WOR ZONE */
-
-        /*   map  */
-        /*   footer  */
-        
-            .footer__col--second {
-                width: 100%;
-                /* padding-right: 0; */
-            } /* - - - MY MODE - - - */
-            .footer__col--third {
-                width: 100%;
-                /* padding-left: 0; */
-            } /* - - - MY MODE - - - */
+        /*   footer  */  /* - - - MY MODE - - - */
+            .footer__col--second {width: 100%;}
+            .footer__col--third {width: 100%;}
             .footer__title {
                 font-size: 20px;
                 text-align: center;
-            } /* */ /* - - - MY MODE - - - */
+            }  /* */
 
         /*   subscribe  */
             .subscribe {
@@ -2771,7 +2442,7 @@ hr {
                 border-right: 1px solid #e7e7e7;
             }
 
-        /*   blogs  */
+        /*   blogs  */  /* - - - modified - - - */
             .blogs__item::before {
                 width: 99px;
                 height: 60px;
@@ -2802,169 +2473,74 @@ hr {
                 width: 90px;
                 height: 60px;
             }
-            /* .blogs__title {font-size: 10px;}  убрать в MY MODE  */
             .blogs__title {
                 margin-bottom: 3px;
                 font-size: 11px;
                 line-height: 1.3;
             } /* - - - MY MODE - - - */
-            .blogs__date {font-size: 12px;} /* - - - MY MODE - - - */
+            .blogs__date {font-size: 12px;}  /* - - - MY MODE - - - */
 
         /*   instagram  */
-            .instagram {margin: 0 30px;} /* - - - MY MODE - - - */
-            .inst__link {margin: 7px 30px 0px;} /* - - - MY MODE - - - */
+            .instagram {margin: 0 30px;}  /* - - - MY MODE - - - */
+            .inst__link {margin: 7px 30px 0px;}  /* - - - MY MODE - - - */
 
-        /*   copyright  */
     }
-
 
     @media (max-width: 410px) {
-        
-        .simplUs____blog__photo-text {margin: 0px 2px; /* changed */}
-
-        .simplUs____blog__date::before {
-            padding: 8px 0px; /* changed */
-
-            /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
-        }
-        .simplUs____blog__date::after {
-            padding: 8px 0px; /* changed */
-
-            /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
-        }
-
-        .blog__item:hover .simplUs____blog__date::before {padding: 4px 0px; /* changed */}
-        .blog__item:hover .simplUs____blog__date::after {padding: 4px 0px; /* changed */}
-        .blog__item:hover .simplUs____blog__date-day {top: 19%; /* changed */}
-        .blog__item:hover .simplUs____blog__date-month {bottom: 19%; /* changed */}
-
-        .simplUs____blog__date {
-            /* background-color: #a7f7e7; */
-
-            /* padding: 10px 20px; */
-            
-            /* text-align: center; */
-
-            /* color: #fff; */
-            /* max-width: 75px;
-            width: 100%; */
-            
-            /* position: absolute;
-            top: 45%; left: 50%;
-            transform: translate3d(-50%, -48%, 0); */
-            /* z-index: 2; */
-            /* line-height: 1; */
-        }
-        .simplUs____blog__date-day {
-            /* padding: 10px 5px; no changed */
-            /* width: 120px; no changed */
-            /* font-size: 23px; no changed */
-            top: 30%; /* changed */
-            
-            /* transition: top .2s linear, border .2s linear, color .2s linear; */
-        }
-        .simplUs____blog__date-month {
-            /* padding: 10px 5px; no changed */
-            /* width: 120px; no changed */
-            /* font-size: 23px; no changed */
-            bottom: 30%; /* changed */
-            
-            /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
-        }
-    }
-
-    
-    
-    /* Desktop / Широкоугольные мониторы */
-    @media (max-width: 350px) {
-        /*   intro  */
-        /*   header  */
-        /*   nav  */
-        /*   btn  */
-        /*   slider  */
-        /*   section  */
-        /*   card (About&Team)  */
-        /*   social (Team)  */
-        /*   statistics  */
-        /*   services  */
-        /*   devices  */
-        /*   we  do  */  
-        /*   accordion  */
-        /*   reviews  */
-        /*   logos  */
-        /*   works  */
-        /*   clients  */
 
         /*   blog  */
+            .blog {text-align: center;}
+            
+            .simplUs____blog__photo-text {margin: 0px 2px;}
 
-            .simplUs____blog__photo-text {margin: 0px 55px; /* changed */}
+            .simplUs____blog__date::before {padding: 8px 0px;}
+            .simplUs____blog__date::after {padding: 8px 0px;}
+
+            .blog__item:hover .simplUs____blog__date::before {padding: 4px 0px;}
+            .blog__item:hover .simplUs____blog__date::after {padding: 4px 0px;}
+            .blog__item:hover .simplUs____blog__date-day {top: 19%;}
+            .blog__item:hover .simplUs____blog__date-month {bottom: 19%;}
+
+            .simplUs____blog__date-day {top: 30%;}
+            .simplUs____blog__date-month {bottom: 30%;}
+    }  /* - - - MY MODE - - - */
+
+    /* Desktop / Широкоугольные мониторы */
+    @media (max-width: 350px) {
+
+        /*   blog  */  /*  - - - MY MODE - - - */
+            .simplUs____blog__photo-text {margin: 0px 55px;}
 
             .simplUs____blog__date::before {
-                padding: 5px 0px; /* changed */
-                font-size: 25px; /* changed */
-
-                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+                padding: 5px 0px;
+                font-size: 25px;
             }
             .simplUs____blog__date::after {
-                padding: 5px 0px; /* changed */
-                font-size: 25px; /* changed */
-
-                /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
+                padding: 5px 0px;
+                font-size: 25px;
             }
 
             .blog__item:hover .simplUs____blog__date::before {
-                padding: 1px 0px; /* changed */
-                font-size: 25px; /* changed */
-                height: 36%; /* changed */
+                padding: 1px 0px;
+                font-size: 25px;
+                height: 36%;
             }
             .blog__item:hover .simplUs____blog__date::after {
-                padding: 1px 0px; /* changed */
-                font-size: 25px; /* changed */
-                height: 36%; /* changed */
+                padding: 1px 0px;
+                font-size: 25px;
+                height: 36%;
             }
-            .blog__item:hover .simplUs____blog__date-day {top: 13%; /* changed */}
-            .blog__item:hover .simplUs____blog__date-month {bottom: 13%; /* changed */}
+            .blog__item:hover .simplUs____blog__date-day {top: 13%;}
+            .blog__item:hover .simplUs____blog__date-month {bottom: 13%;}
 
-            .simplUs____blog__date {
-                /* background-color: #a7f7e7; */
-
-                /* padding: 10px 20px; */
-                
-                /* text-align: center; */
-
-                /* color: #fff; */
-                /* max-width: 75px;
-                width: 100%; */
-                
-                /* position: absolute;
-                top: 45%; left: 50%;
-                transform: translate3d(-50%, -48%, 0); */
-                /* z-index: 2; */
-                /* line-height: 1; */
-            }
             .simplUs____blog__date-day {
-                /* padding: 10px 5px; no changed */
-                width: 100px; /* changed */
-                /* font-size: 23px; no changed */
-                top: 28%; /* changed */
-                
-                /* transition: top .2s linear, border .2s linear, color .2s linear; */
+                width: 100px;
+                top: 28%;
             }
             .simplUs____blog__date-month {
-                /* padding: 10px 5px; no changed */
-                width: 100px; /* changed */
-                /* font-size: 23px; no changed */
-                bottom: 28%; /* changed */
-                
-                /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
+                width: 100px;
+                bottom: 28%;
             }
-
-
-
-
-        /*   map  */
-        /*   footer  */
-        /*   subscribe  */
 
         /*   blogs  */
             .blogs__title {
@@ -2975,77 +2551,32 @@ hr {
             }
             .blogs__date {font-size: 11px;}
 
-        /*   instagram  */
-        /*   copyright  */
     }
-
 
     @media (max-width: 300px) {
-        .simplUs____blog__photo-text {
-            margin: 0px 45px; /* changed */
-            font-size: 11px; /* changed */
-        }
+        /*   blog  */
+            .simplUs____blog__photo-text {
+                margin: 0px 45px;
+                font-size: 11px;
+            }
 
-        .simplUs____blog__date::before {
-            padding: 6px 0px; /* changed */
-            font-size: 20px; /* changed */
+            .simplUs____blog__date::before {
+                padding: 6px 0px;
+                font-size: 20px;
+            }
+            .simplUs____blog__date::after {
+                padding: 6px 0px;
+                font-size: 20px;
+            }
 
-            /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
-        }
-        .simplUs____blog__date::after {
-            padding: 6px 0px; /* changed */
-            font-size: 20px; /* changed */
+            .blog__item:hover .simplUs____blog__date::before {font-size: 20px;}
+            .blog__item:hover .simplUs____blog__date::after {font-size: 20px;}
+            .blog__item:hover .simplUs____blog__date-day {top: 9%;}
+            .blog__item:hover .simplUs____blog__date-month {bottom: 9%;}
 
-            /* transition: line-height .2s linear, height .2s linear, background-color .2s linear, color .2s linear, padding .2s linear; changed */
-        }
-
-        .blog__item:hover .simplUs____blog__date::before {
-            /* padding: 1px 0px; no changed */
-            font-size: 20px; /* changed */
-            /* height: 36%; no changed */
-        }
-        .blog__item:hover .simplUs____blog__date::after {
-            /* padding: 1px 0px; no changed */
-            font-size: 20px; /* changed */
-            /* height: 36%; no changed */
-        }
-        .blog__item:hover .simplUs____blog__date-day {top: 9%; /* changed */}
-        .blog__item:hover .simplUs____blog__date-month {bottom: 9%; /* changed */}
-
-        .simplUs____blog__date {
-            /* background-color: #a7f7e7; */
-
-            /* padding: 10px 20px; */
-            
-            /* text-align: center; */
-
-            /* color: #fff; */
-            /* max-width: 75px;
-            width: 100%; */
-            
-            /* position: absolute;
-            top: 45%; left: 50%;
-            transform: translate3d(-50%, -48%, 0); */
-            /* z-index: 2; */
-            /* line-height: 1; */
-        }
-        .simplUs____blog__date-day {
-            /* padding: 10px 5px; no changed */
-            /* width: 100px; no changed */
-            /* font-size: 23px; no changed */
-            top: 25%; /* changed */
-            
-            /* transition: top .2s linear, border .2s linear, color .2s linear; */
-        }
-        .simplUs____blog__date-month {
-            /* padding: 10px 5px; no changed */
-            /* width: 100px; no changed */
-            /* font-size: 23px; no changed */
-            bottom: 25%; /* changed */
-            
-            /* transition: bottom .2s linear, border .2s linear, color .2s linear; */
-        }
-    }
+            .simplUs____blog__date-day {top: 25%;}
+            .simplUs____blog__date-month {bottom: 25%;}
+    }  /*  - - - MY MODE - - - */
 
 /*     <| M E D I A |     */
 
@@ -3067,6 +2598,19 @@ hr {
 
 
 
+/* WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE */
+/* WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE */
+/* WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE */
+
+
+
+/* WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE */
+/* WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE */
+/* WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE  WORK ZONE */
+
+
+  /* - - - modified - - - */
+  /*  - - - MY MODE - - - */
 
 
 
