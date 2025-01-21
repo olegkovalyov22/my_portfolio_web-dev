@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+    /* font-family: "Roboto Flex", serif; */
+    /* font-family: "Hammersmith One", serif; */
+    /* font-family: "Playfair Display", serif; */
+
+
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto Flex", serif;
+    font-size: 15px;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+
+
+
+
+/*     | S T Y L E |>     */
+        
+    /* paзмеры
+        |__________________________(1600)_________________________|
+        |_(150)_||__________________1300_________________||_(150)_| all  s e c t i o n
+        |_(150)_||_150_|____________1000___________|_150_||_(150)_| pad  s e c t i o n
+        |_(150)_||_150_|____________1000___________|_150_||_(150)_| all  c o n t a i n e r
+        |_(150)_||_150_|_25_|________950___________|_150_||_(150)_| pad  c o n t a i n e r
+    */
+
+
+    /*     P a g e     */
+        .page {overflow: hidden;}
+
+    /*     C o n t a i n e r     */
+        .container {
+            margin: 0 auto;
+            padding: 0 25px;
+            width: 100%;
+            max-width: 1050px;
+        }
+        
+    /*     S e c t i o n     */
+
+
+
+
+    /*     H e a d e r     */
+        .header {}
+
+        .header__inner {display: flex;}
+
+        .header__logo {
+            display: flex;
+        }
+
+        .logo__img {
+            display: flex;
+        }
+
+
+
+
+
+
+
+/*     <| S T Y L E |     */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
