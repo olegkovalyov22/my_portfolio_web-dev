@@ -23,31 +23,34 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="header" id="header">  <!--  |  fixed|  active  -->
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo">
+                <div class="header__logo"  data-scroll="#intro">
                     <img class="logo__img" src="assets/images/logo_edges.png" alt="">
                     <div class="logo__name">tajam</div>
                 </div>
 
-                <div class="navbar">
-                    <a class="nav__link" href="#">Home</a>
-                    <a class="nav__link" href="#">About</a>
-                    <a class="nav__link" href="#">Expertise</a>
-                    <a class="nav__link" href="#">Teams</a>
-                    <a class="nav__link" href="#">Works</a>
-                    <a class="nav__link" href="#">People Say</a>
-                    <a class="nav__link" href="#">Contact</a>
+                <div class="navbar" id="navbar">  <!--  |  active  -->
+                    <a class="nav__link" id="navlin" href="#" data-scroll="#intro">Home</a>  <!--  |  active  -->
+                    <a class="nav__link" id="navlin" href="#" data-scroll="#about">About</a>
+                    <a class="nav__link" id="navlin" href="#" data-scroll="#expertise">Expertise</a>
+                    <a class="nav__link" id="navlin" href="#" data-scroll="#teams">Teams</a>
+                    <a class="nav__link" id="navlin" href="#" data-scroll="#works">Works</a>
+                    <a class="nav__link" id="navlin" href="#" data-scroll="#reviews">People Say</a>
+                    <a class="nav__link" id="navlin" href="#" data-scroll="#contact">Contact</a>
                 </div>
                 
+                <button class="nav-toggle" id="nav-toggle" type="button">  <!--  |  active  -->
+                    <span class="nav-toggle__item">Menu</span>
+                </button>
             </div>  <!-- /.header__inner -->
         </div>  <!-- /.container -->
     </header>  <!-- /.header -->
 
     <div class="page">
 
-        <div class="intro">
+        <div class="intro"  id="intro">
             <div class="container">
                 <div class="intro__inner">
 
@@ -71,7 +74,7 @@
             </div>  <!-- /.container -->
         </div>  <!-- /.intro -->
 
-        <section class="section">
+        <section class="section" id="about">
             <div class="container">
                 <div class="story__inner">
                     
@@ -115,7 +118,7 @@
             </div>  <!-- /.container -->
         </section>  <!-- /.section -> .video -->
 
-        <section class="section">
+        <section class="section" id="expertise">
             <div class="container">
                 <div class="section__header">
                     <div class="section__title">Expertise</div>
@@ -176,9 +179,7 @@
             </div>  <!-- /.container -->
         </section>  <!-- /.section -> .expertise -->
 
-
-
-        <section class="section  section--team">
+        <section class="section  section--team" id="teams">
             <div class="container">
                 <div class="section__header">
                     <div class="section__title--team">Meet Our Amazing Team</div>
@@ -331,14 +332,18 @@
 
         </section>  <!-- /.section -> .team -->
 
-
-        <section class="section">
+        <section class="section" id="works">
             <div class="container">
                 <div class="works__header">
                     <div class="wh__title">Our Works</div>
                     <a class="wh__subtitle" href="#">
+                        <i class="fas fa-chevron-right  wh__chevron--one  wh__chevron--adaptivPhone"></i>
+                        <i class="fas fa-chevron-right  wh__chevron--two  wh__chevron--adaptivPhone"></i>
+                        <i class="fas fa-chevron-right  wh__chevron--three  wh__chevron--adaptivPhone"></i>
                         <div class="wh__stText">See All Project in dribbble</div>
-                        <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-chevron-right  wh__chevron--one"></i>
+                        <i class="fas fa-chevron-right  wh__chevron--two"></i>
+                        <i class="fas fa-chevron-right  wh__chevron--three"></i>
                     </a>
                 </div>
             </div>  <!-- /.container -->
@@ -460,7 +465,7 @@
         
 
 
-        <section class="section  section--reviews">
+        <section class="section  section--reviews" id="reviews">
             <div class="container">
                 <div class="section__header">
                     <div class="section__img"></div>
@@ -584,13 +589,7 @@
 
 
 
-
-
-
-
-
-
-        <section class="section">
+        <section class="section" id="contact">
             <div class="container">
                 <div class="contact">
                     <div class="contact__column  contact__column--one">
@@ -646,8 +645,6 @@
             </div>  <!-- /.container -->
         </section>  <!-- /.section -> .contact -->
 
-
-
         <footer class="footer  section--footer">
             <div class="container">
                 <div class="footer__up">
@@ -675,11 +672,11 @@
                     </div>  <!-- /.footer__column 02 -->
 
                     <div class="footer__column  footer__column--third">
-                        <div class="footer__title">Our Studio</div>
+                        <div class="footer__title">Stay In Touch</div>
 						<div class="footer__social">
 							<form class="form__subscribe">
 								<input class="subscribe__inp" type="text" name="subscribe" placeholder="Subscribe our newsletter">
-								<button class="subscribe__btn" type="submit"><a href="#"><img class="subscribe__icon" src="assets/images/footer/footer_sub_btn.png"><a></button>
+								<button class="subscribe__btn" type="submit"><span>Subscribe</span><img class="subscribe__icon" src="assets/images/footer/footer_sub_btn.png"></button>
 							</form>
 							<div class="social__content">
 								<div class="soc__ellipse">

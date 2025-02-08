@@ -2505,7 +2505,7 @@ hr {
             .simplUs____blog__date-month {bottom: 30%;}
     }  /* - - - MY MODE - - - */
 
-    /* Desktop / Широкоугольные мониторы */
+    /* Mobile devices / Телефоны */
     @media (max-width: 350px) {
 
         /*   blog  */  /*  - - - MY MODE - - - */
