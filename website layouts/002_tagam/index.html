@@ -14,11 +14,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     
     <!-- иконка сайта -->
-    <link rel="icon" type="image/png" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
 
     <!-- слайдер с Slick JS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -39,13 +39,14 @@
                 </div>
 
                 <div class="navbar" id="navbar">  <!--  |  active  -->
-                    <a class="nav__link" id="navlin" href="#" data-scroll="#intro">Home</a>  <!--  |  active  -->
-                    <a class="nav__link" id="navlin" href="#" data-scroll="#about">About</a>
-                    <a class="nav__link" id="navlin" href="#" data-scroll="#expertise">Expertise</a>
-                    <a class="nav__link" id="navlin" href="#" data-scroll="#teams">Teams</a>
-                    <a class="nav__link" id="navlin" href="#" data-scroll="#works">Works</a>
-                    <a class="nav__link" id="navlin" href="#" data-scroll="#reviews">People Say</a>
-                    <a class="nav__link" id="navlin" href="#" data-scroll="#contact">Contact</a>
+                    <a class="nav__link" id="navlin" href="#intro" data-scroll="#intro">Home</a>  <!--  |  active  -->
+                    <a class="nav__link" id="navlin" href="#about" data-scroll="#about">About</a>
+                    <a class="nav__link" id="navlin" href="#expertise" data-scroll="#expertise">Expertise</a>
+                    <a class="nav__link" id="navlin" href="#teams" data-scroll="#teams">Teams</a>
+                    <a class="nav__link" id="navlin" href="#works" data-scroll="#works">Works</a>
+                    <a class="nav__link" id="navlin" href="#reviews" data-scroll="#reviews">People Say</a>
+                    <a class="nav__link" id="navlin" href="#contact" data-scroll="#contact">Contact</a>
+                    <!-- <button id="theme-toggle"><img src="assets/images/intro/moon_night_icon.png" alt=""></button> -->
                 </div>
                 
                 <button class="nav-toggle" id="nav-toggle" type="button">  <!--  |  active  -->
@@ -57,9 +58,9 @@
 
     <div class="page">
 
-        <div class="intro"  id="intro">
+        <div class="intro  sect"  id="intro">
             <div class="container">
-                <div class="intro__inner">
+                <!-- <div class="intro__inner  active" data-slide="1">
 
                     <h1 class="intro__title">We Are Awesome Creative Agency</h1>
                     
@@ -70,18 +71,82 @@
                     <a class="btn" href="#">Learn More</a>
                 </div>
 
+                <div class="intro__inner" data-slide="2">
+
+                    <h1 class="intro__title">We Are Awesome Creative Agency</h1>
+
+                    <a class="btn" href="#">Learn More</a>
+                </div>
+                
+                <div class="intro__inner" data-slide="3">
+                    
+                    <p class="intro__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                        quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                        vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+
+                    <a class="btn" href="#">Learn More</a>
+                </div>
+                
+                <div class="intro__inner" data-slide="4">
+
+                    <h1 class="intro__title">We Are Awesome Creative Agency</h1>
+                    
+                    <p class="intro__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                        quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                        vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                </div> -->
+                
+                <div class="intro__inner">
+                    <div class="slider__content active" data-slide="1">
+    
+                        <h1 class="intro__title">We Are Awesome Creative Agency</h1>
+                        
+                        <p class="intro__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+    
+                        <a class="btn" href="#">Learn More</a>
+                    </div>
+    
+                    <div class="slider__content" data-slide="2">
+    
+                        <h1 class="intro__title">We Are Awesome Creative Agency</h1>
+    
+                        <a class="btn" href="#">Learn More</a>
+                    </div>
+                    
+                    <div class="slider__content" data-slide="3">
+                        
+                        <p class="intro__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+    
+                        <a class="btn" href="#">Learn More</a>
+                    </div>
+                    
+                    <div class="slider__content" data-slide="4">
+    
+                        <h1 class="intro__title">We Are Awesome Creative Agency</h1>
+                        
+                        <p class="intro__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                    </div>
+                </div>
+
+
                 <div class="slider">
                     <div class="slider__inner">
-                        <a class="slider__item  active" href="#"></a>
-                        <a class="slider__item" href="#"></a>
-                        <a class="slider__item" href="#"></a>
-                        <a class="slider__item" href="#"></a>
+                        <a class="slider__item  active" href="#" data-slide="1"></a>
+                        <a class="slider__item" href="#" data-slide="2"></a>
+                        <a class="slider__item" href="#" data-slide="3"></a>
+                        <a class="slider__item" href="#" data-slide="4"></a>
                     </div>
                 </div>
             </div>  <!-- /.container -->
         </div>  <!-- /.intro -->
 
-        <section class="section" id="about">
+        <section class="section  sect" id="about">
             <div class="container">
                 <div class="story__inner">
                     
@@ -125,7 +190,7 @@
             </div>  <!-- /.container -->
         </section>  <!-- /.section -> .video -->
 
-        <section class="section" id="expertise">
+        <section class="section  sect" id="expertise">
             <div class="container">
                 <div class="section__header">
                     <div class="section__title">Expertise</div>
@@ -186,7 +251,7 @@
             </div>  <!-- /.container -->
         </section>  <!-- /.section -> .expertise -->
 
-        <section class="section  section--team" id="teams">
+        <section class="section  sect  section--team" id="teams">
             <div class="container">
                 <div class="section__header">
                     <div class="section__title--team">Meet Our Amazing Team</div>
@@ -339,7 +404,7 @@
 
         </section>  <!-- /.section -> .team -->
 
-        <section class="section" id="works">
+        <section class="section  sect" id="works">
             <div class="container">
                 <div class="works__header">
                     <div class="wh__title">Our Works</div>
@@ -472,9 +537,9 @@
         
 
 
-        <section class="section  section--reviews" id="reviews">
+        <section class="section  sect  section--reviews" id="reviews">
             <div class="container">
-                <div class="section__header  section__header--margNone">
+                <div class="section__header"> <!--  section__header--margNone  -->
                     <div class="section__img"></div>
                     <img class="section__img" src="assets/images/reviews/reviews_phrase.png" alt="">
                     
@@ -643,7 +708,7 @@
 
 
 
-        <section class="section" id="contact">
+        <section class="section  sect" id="contact">
             <div class="container">
                 <div class="contact">
                     <div class="contact__column  contact__column--one">
@@ -680,16 +745,16 @@
                             </div> -->
                             
                             <div class="client__company">
-                                <a class="company__logo" href="#"><img src="assets/images/firm_clients/client001.png"></a>
-                                <a class="company__logo" href="#"><img src="assets/images/firm_clients/client002.png"></a>
-                                <a class="company__logo" href="#"><img src="assets/images/firm_clients/client003.png"></a>
-                                <a class="company__logo" href="#"><img src="assets/images/firm_clients/client004.png"></a>
-                                <a class="company__logo" href="#"><img src="assets/images/firm_clients/client005.png"></a>
-                                <a class="company__logo" href="#"><img src="assets/images/firm_clients/client006.png"></a>
-                                <a class="company__logo" href="#"><img src="assets/images/firm_clients/client007.png"></a>
-                                <a class="company__logo" href="#"><img src="assets/images/firm_clients/client008.png"></a>
-                                <a class="company__logo" href="#"><img src="assets/images/firm_clients/client009.png"></a>
-                                <a class="company__logo" href="#"><img src="assets/images/firm_clients/client010.png"></a>
+                                <a class="company__logo" target="_blank" href="https://www.zara.com/"><img src="assets/images/firm_clients/client001.png"></a>
+                                <a class="company__logo" target="_blank" href="https://shop.mango.com/ru/ru/h/%D0%B6%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F"><img src="assets/images/firm_clients/client002.png"></a>
+                                <a class="company__logo" target="_blank" href="https://gb.saks.com/en-gb/?utm_source=redirect&utm_mediumcdn_redirect&utm_campaign=unknown_product_or_page"><img src="assets/images/firm_clients/client003.png"></a>
+                                <a class="company__logo" target="_blank" href="https://www.gucci.com/int/ru/?srsltid=AfmBOooA5jq0i6inhCXrzvwjN794uzPUSTMykT8fAtzpGeFA8jpu-bl7"><img src="assets/images/firm_clients/client004.png"></a>
+                                <a class="company__logo" target="_blank" href="https://www.calvinklein.co.uk/"><img src="assets/images/firm_clients/client005.png"></a>
+                                <a class="company__logo" target="_blank" href="https://www.nike.com/ru/"><img src="assets/images/firm_clients/client006.png"></a>
+                                <a class="company__logo" target="_blank" href="https://www.converse.com/country-language-selector"><img src="assets/images/firm_clients/client007.png"></a>
+                                <a class="company__logo" target="_blank" href="https://us.puma.com/us/en?srsltid=AfmBOopb2l6qpu-KqnwsDq5VLs2Lfss0cfGRvU7PhHuNk1IIeI_pY7vb"><img src="assets/images/firm_clients/client008.png"></a>
+                                <a class="company__logo" target="_blank" href="https://www.levi.com/US/en_US/?srsltid=AfmBOoqcKcaNwQd2OHMMMFhvKKvA7u7seam_hGLNirM3ikQqcR9pwieH"><img src="assets/images/firm_clients/client009.png"></a>
+                                <a class="company__logo" target="_blank" href="https://billabong.ru/"><img src="assets/images/firm_clients/client010.png"></a>
                             </div>
                             
                         </div>
