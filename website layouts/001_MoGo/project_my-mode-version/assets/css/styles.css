@@ -171,7 +171,7 @@ hr {
         }
         .nav__link:hover {color: #fce38a;}
         .nav__link:hover:after, .nav__link.active::after {opacity: 1;}
-        .nav__link.active {color: #fce38a;}
+        .nav__link.active {color: #fff6d6;}
 
     /*     N a v - t o g g l e     */
         .nav-toggle {
@@ -2009,6 +2009,39 @@ hr {
                 line-height: 1.3;
             }
             .blogs__date {font-size: 12px;}
+    }
+
+    @media (max-height: 770px) {
+        /*   intro  */
+            .intro {min-height: 620px;}
+            .intro__title {font-size: 120px;}
+            .intro__title::after {margin: 30px auto;}
+            .intro__suptitle {margin-bottom: 0px;}
+        /*   header  */
+            .header {padding-top: 15px;}
+        /*   nav  */
+        /*   btn  */
+        /*   slider  */
+            .slider__item {padding: 10px 0;}
+        /*   section  */
+        /*   card (About&Team)  */
+        /*   social (Team)  */
+        /*   statistics  */
+        /*   services  */
+        /*   devices  */
+        /*   we  do  */  
+        /*   accordion  */
+        /*   reviews  */
+        /*   logos  */
+        /*   works  */
+        /*   clients  */
+        /*   blog  */
+        /*   map  */
+        /*   footer  */
+        /*   subscribe  */
+        /*   blogs  */
+        /*   instagram  */
+        /*   copyright  */
     }
 
     /* Tablet Landscape / Планшет в альбомном режиме */

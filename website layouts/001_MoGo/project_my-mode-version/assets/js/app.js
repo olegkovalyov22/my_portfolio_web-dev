@@ -77,3 +77,36 @@ $(function() {
 
 
 });
+
+
+
+// Header -> active link
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".sect");
+    const menuLinks = document.querySelectorAll(".nav__link");
+  
+    const observerOptions = {
+        root: null,
+        threshold: 0.5, // 50% секции в видимой области
+    };
+  
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                menuLinks.forEach((link) => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href").substring(1) === entry.target.id) {
+                        link.classList.add("active");
+                    }
+                });
+            }
+        });
+    }, observerOptions);
+  
+    sections.forEach((section) => observer.observe(section));
+  
+    console.log("Секции найдены:", sections);
+  });
+  
+  
